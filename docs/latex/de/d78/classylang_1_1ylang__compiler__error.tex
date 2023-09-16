@@ -1,0 +1,112 @@
+\hypertarget{classylang_1_1ylang__compiler__error}{}\doxysection{ylang\+::ylang\+\_\+compiler\+\_\+error Class Reference}
+\label{classylang_1_1ylang__compiler__error}\index{ylang::ylang\_compiler\_error@{ylang::ylang\_compiler\_error}}
+
+
+Class used to throw compiler errors with line and column information with help to specify which part of the compiler the error message is coming from.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::ylang\+\_\+compiler\+\_\+error\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::ylang\+\_\+compiler\+\_\+error\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classylang_1_1ylang__compiler__error_ac3a1de09cbf66d4fa98e2d910cafe9a4}{ylang\+\_\+compiler\+\_\+error}} (const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct a new ylang compiler error object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classylang_1_1ylang__compiler__error_a4a2235789e13fad95e5a88d9b155385d}{ylang\+\_\+compiler\+\_\+error}} (uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct a new ylang compiler error object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classylang_1_1ylang__compiler__error_a5807bd75f8d4ddc113ea68a9103968e2}{ylang\+\_\+compiler\+\_\+error}} (\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}} level, uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct a new ylang compiler error object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ylang__compiler__error_a60f486081a744285a0dd58a8046dcd0f}\label{classylang_1_1ylang__compiler__error_a60f486081a744285a0dd58a8046dcd0f}} 
+\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}} {\bfseries level} = Error\+Level\+::\+UNDEFINED\+\_\+\+BEHAVIOR
+\item 
+\mbox{\Hypertarget{classylang_1_1ylang__compiler__error_a1f348725a67cc27c63d042fbdd1c1258}\label{classylang_1_1ylang__compiler__error_a1f348725a67cc27c63d042fbdd1c1258}} 
+uint32\+\_\+t {\bfseries line} = 0
+\item 
+\mbox{\Hypertarget{classylang_1_1ylang__compiler__error_a11ad9ba33c4dc6063fb779d6d958d2e7}\label{classylang_1_1ylang__compiler__error_a11ad9ba33c4dc6063fb779d6d958d2e7}} 
+uint32\+\_\+t {\bfseries column} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to throw compiler errors with line and column information with help to specify which part of the compiler the error message is coming from. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classylang_1_1ylang__compiler__error_ac3a1de09cbf66d4fa98e2d910cafe9a4}\label{classylang_1_1ylang__compiler__error_ac3a1de09cbf66d4fa98e2d910cafe9a4}} 
+\index{ylang::ylang\_compiler\_error@{ylang::ylang\_compiler\_error}!ylang\_compiler\_error@{ylang\_compiler\_error}}
+\index{ylang\_compiler\_error@{ylang\_compiler\_error}!ylang::ylang\_compiler\_error@{ylang::ylang\_compiler\_error}}
+\doxysubsubsection{\texorpdfstring{ylang\_compiler\_error()}{ylang\_compiler\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily ylang\+::ylang\+\_\+compiler\+\_\+error\+::ylang\+\_\+compiler\+\_\+error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new ylang compiler error object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1ylang__compiler__error_a4a2235789e13fad95e5a88d9b155385d}\label{classylang_1_1ylang__compiler__error_a4a2235789e13fad95e5a88d9b155385d}} 
+\index{ylang::ylang\_compiler\_error@{ylang::ylang\_compiler\_error}!ylang\_compiler\_error@{ylang\_compiler\_error}}
+\index{ylang\_compiler\_error@{ylang\_compiler\_error}!ylang::ylang\_compiler\_error@{ylang::ylang\_compiler\_error}}
+\doxysubsubsection{\texorpdfstring{ylang\_compiler\_error()}{ylang\_compiler\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily ylang\+::ylang\+\_\+compiler\+\_\+error\+::ylang\+\_\+compiler\+\_\+error (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new ylang compiler error object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1ylang__compiler__error_a5807bd75f8d4ddc113ea68a9103968e2}\label{classylang_1_1ylang__compiler__error_a5807bd75f8d4ddc113ea68a9103968e2}} 
+\index{ylang::ylang\_compiler\_error@{ylang::ylang\_compiler\_error}!ylang\_compiler\_error@{ylang\_compiler\_error}}
+\index{ylang\_compiler\_error@{ylang\_compiler\_error}!ylang::ylang\_compiler\_error@{ylang::ylang\_compiler\_error}}
+\doxysubsubsection{\texorpdfstring{ylang\_compiler\_error()}{ylang\_compiler\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily ylang\+::ylang\+\_\+compiler\+\_\+error\+::ylang\+\_\+compiler\+\_\+error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}}}]{level,  }\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new ylang compiler error object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & the level of the error \\
+\hline
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{errors_8hpp}{errors.\+hpp}}\end{DoxyCompactItemize}

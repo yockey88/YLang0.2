@@ -1,0 +1,98 @@
+\hypertarget{classylang_1_1Util}{}\doxysection{ylang\+::Util Class Reference}
+\label{classylang_1_1Util}\index{ylang::Util@{ylang::Util}}
+
+
+used to read and validate the source code from a file as well as act as a store-\/all for miscallaneous utility functions  
+
+
+
+
+{\ttfamily \#include $<$util.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1Util_aaa8f61096452495269620ea73087b51d}\label{classylang_1_1Util_aaa8f61096452495269620ea73087b51d}} 
+static const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}} $>$ \& {\bfseries Get\+Cmnd\+Line\+Args} ()
+\item 
+static const void \mbox{\hyperlink{classylang_1_1Util_a42cc7a47999163bb4383639e66ffdabe}{Print\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em See Y Lang documentation for more information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classylang_1_1Util_ab45f12cd255f45a6bee3dabb6bccc7b1}\label{classylang_1_1Util_ab45f12cd255f45a6bee3dabb6bccc7b1}} 
+static const void {\bfseries Print\+Version} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Util_a9ffcd8564a27d23789011d5e1dc868b5}\label{classylang_1_1Util_a9ffcd8564a27d23789011d5e1dc868b5}} 
+static void {\bfseries Read\+Cmnd\+Line\+Args} (int $\ast$argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+static void \mbox{\hyperlink{classylang_1_1Util_a3208be993bb6d29709885d70d49b869f}{Print\+Token}} (const \mbox{\hyperlink{structylang_1_1Token}{Token}} \&token)
+\item 
+static std\+::string \mbox{\hyperlink{classylang_1_1Util_aa665555c20224d7ada8188187ef67b42}{Read\+Src}} ()
+\item 
+static const std\+::string \mbox{\hyperlink{classylang_1_1Util_a38f7e3d7957dc22a8fa8c5906f545d58}{Get\+Curr\+File\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1Util_a240e2b40e06a9f07022207c5ec6a5e96}\label{classylang_1_1Util_a240e2b40e06a9f07022207c5ec6a5e96}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}} $>$ {\bfseries cmnd\+\_\+line\+\_\+args} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+used to read and validate the source code from a file as well as act as a store-\/all for miscallaneous utility functions 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classylang_1_1Util_a38f7e3d7957dc22a8fa8c5906f545d58}\label{classylang_1_1Util_a38f7e3d7957dc22a8fa8c5906f545d58}} 
+\index{ylang::Util@{ylang::Util}!GetCurrFileName@{GetCurrFileName}}
+\index{GetCurrFileName@{GetCurrFileName}!ylang::Util@{ylang::Util}}
+\doxysubsubsection{\texorpdfstring{GetCurrFileName()}{GetCurrFileName()}}
+{\footnotesize\ttfamily const std\+::string ylang\+::\+Util\+::\+Get\+Curr\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+name of the current file if the -\/f flag is present, \char`\"{}$<$no-\/file.\+yl$>$\char`\"{} otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classylang_1_1Util_a3208be993bb6d29709885d70d49b869f}\label{classylang_1_1Util_a3208be993bb6d29709885d70d49b869f}} 
+\index{ylang::Util@{ylang::Util}!PrintToken@{PrintToken}}
+\index{PrintToken@{PrintToken}!ylang::Util@{ylang::Util}}
+\doxysubsubsection{\texorpdfstring{PrintToken()}{PrintToken()}}
+{\footnotesize\ttfamily void ylang\+::\+Util\+::\+Print\+Token (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structylang_1_1Token}{Token}} \&}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & token to print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classylang_1_1Util_a42cc7a47999163bb4383639e66ffdabe}\label{classylang_1_1Util_a42cc7a47999163bb4383639e66ffdabe}} 
+\index{ylang::Util@{ylang::Util}!PrintUsage@{PrintUsage}}
+\index{PrintUsage@{PrintUsage}!ylang::Util@{ylang::Util}}
+\doxysubsubsection{\texorpdfstring{PrintUsage()}{PrintUsage()}}
+{\footnotesize\ttfamily const void ylang\+::\+Util\+::\+Print\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+See Y Lang documentation for more information. 
+
+\mbox{\Hypertarget{classylang_1_1Util_aa665555c20224d7ada8188187ef67b42}\label{classylang_1_1Util_aa665555c20224d7ada8188187ef67b42}} 
+\index{ylang::Util@{ylang::Util}!ReadSrc@{ReadSrc}}
+\index{ReadSrc@{ReadSrc}!ylang::Util@{ylang::Util}}
+\doxysubsubsection{\texorpdfstring{ReadSrc()}{ReadSrc()}}
+{\footnotesize\ttfamily std\+::string ylang\+::\+Util\+::\+Read\+Src (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & path to the file to read the source code from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the source code from the file 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em runtime} & error if the file does not exist \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{util_8hpp}{util.\+hpp}}\item 
+YLang0.\+2/src/util.\+cpp\end{DoxyCompactItemize}

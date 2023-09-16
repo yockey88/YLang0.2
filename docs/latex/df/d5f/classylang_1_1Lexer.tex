@@ -1,0 +1,328 @@
+\hypertarget{classylang_1_1Lexer}{}\doxysection{ylang\+::Lexer Class Reference}
+\label{classylang_1_1Lexer}\index{ylang::Lexer@{ylang::Lexer}}
+
+
+used internally by the ylang compiler to perform lexical analysis on the source code  
+
+
+
+
+{\ttfamily \#include $<$lexer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classylang_1_1Lexer_ab4b3c995c24db913bff1e560f161dc91}{Lexer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ErrorHandler}{Error\+Handler}} $>$ err\+\_\+handler, const std\+::string \&src)
+\item 
+bool \mbox{\hyperlink{classylang_1_1Lexer_ab8996bf73e6f8ea91d904fae9b730b80}{Lex}} ()
+\begin{DoxyCompactList}\small\item\em Method called to lex the source code. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{structylang_1_1Token}{Token}} $>$ \mbox{\hyperlink{classylang_1_1Lexer_aef4e90dbfb36498dae23a383c62cb7ce}{Get\+Tokens}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_abbf95f3449ed6bbeb8a51282f846c5f7}\label{classylang_1_1Lexer_abbf95f3449ed6bbeb8a51282f846c5f7}} 
+bool {\bfseries Is\+Numeric} (char c)
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a0f9fa9faa6dac0d80765f384d0bb99b1}\label{classylang_1_1Lexer_a0f9fa9faa6dac0d80765f384d0bb99b1}} 
+bool {\bfseries Is\+Alpha} (char c)
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a64f4180e29235c34f0e9fdf1dd9fe4b4}\label{classylang_1_1Lexer_a64f4180e29235c34f0e9fdf1dd9fe4b4}} 
+bool {\bfseries Is\+Alpha\+Numeric} (char c)
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a928d119c5baeda6d44f28f6e90454868}\label{classylang_1_1Lexer_a928d119c5baeda6d44f28f6e90454868}} 
+bool {\bfseries Is\+Operator} (char c) const
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_acd7b7f92b781390000c89ad72a1500f4}\label{classylang_1_1Lexer_acd7b7f92b781390000c89ad72a1500f4}} 
+bool {\bfseries Is\+Whitespace} (char c)
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a29f9740b63766bae60d7fe69d371cdc8}\label{classylang_1_1Lexer_a29f9740b63766bae60d7fe69d371cdc8}} 
+bool {\bfseries Is\+Keyword} (const std\+::string \&str) const
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_adb01b9e653c0a8e85462c7f652c47d9d}\label{classylang_1_1Lexer_adb01b9e653c0a8e85462c7f652c47d9d}} 
+Type {\bfseries Get\+Type\+For\+Keyword} (const std\+::string \&str) const
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ab3f7d71f6d29b258e2997cde76a18ad9}\label{classylang_1_1Lexer_ab3f7d71f6d29b258e2997cde76a18ad9}} 
+Type {\bfseries Get\+Type\+For\+Identifier} (const std\+::string \&str) const
+\item 
+void \mbox{\hyperlink{classylang_1_1Lexer_a987444016955e9275c73ce894dd29562}{New\+Line}} (bool iterate\+\_\+src\+\_\+index=true)
+\begin{DoxyCompactList}\small\item\em iterates src if flag is set, infrements line and sets column to 1, also sets error helper variables to the correct values \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classylang_1_1Lexer_a22fee939dbb73067178eeec25fc3ba53}{Consume}} ()
+\begin{DoxyCompactList}\small\item\em increments to next character without saving to current token \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classylang_1_1Lexer_a0a6cefff84e3f8c109abe523a881ef6d}{Advance}} ()
+\begin{DoxyCompactList}\small\item\em saves to current token and increments to next character \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ac77cad23f671c537967cb95823b49e3e}\label{classylang_1_1Lexer_ac77cad23f671c537967cb95823b49e3e}} 
+void {\bfseries Discard\+Token} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ac32de28b5b502c9db0e0a49efbe1adc3}\label{classylang_1_1Lexer_ac32de28b5b502c9db0e0a49efbe1adc3}} 
+void {\bfseries Add\+Token} (Type type)
+\item 
+char \mbox{\hyperlink{classylang_1_1Lexer_a30712cab26ea4d2f09a9f57f17a85057}{Peek}} () const
+\begin{DoxyCompactList}\small\item\em looks at current character while also checking bounds \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classylang_1_1Lexer_a32107e5b5926312746b26d624f5ec3f8}{Peek\+Next}} () const
+\begin{DoxyCompactList}\small\item\em looks at next character while also checking bounds \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ab0acef2afc0a914401950f0cdc9a1dbc}\label{classylang_1_1Lexer_ab0acef2afc0a914401950f0cdc9a1dbc}} 
+bool {\bfseries Check} (char c) const
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a5576f913044829bef45342456ec930df}\label{classylang_1_1Lexer_a5576f913044829bef45342456ec930df}} 
+bool {\bfseries Match} (char c)
+\item 
+void \mbox{\hyperlink{classylang_1_1Lexer_a0f5bdcdcd3d29206979fa547dfc83bc2}{Init\+Token\+Type\+Maps}} ()
+\begin{DoxyCompactList}\small\item\em fills map with strings corresponfing ylang\+::\+Type to identify token types \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ab06204021549ea59a5ecfb39ea025a11}\label{classylang_1_1Lexer_ab06204021549ea59a5ecfb39ea025a11}} 
+void {\bfseries Handle\+Whitespace} ()
+\item 
+void \mbox{\hyperlink{classylang_1_1Lexer_aba22aa003d6112a56b66e29f3898554d}{Handle\+Comment}} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a6a5c9345fc20d145990d576766f20a03}\label{classylang_1_1Lexer_a6a5c9345fc20d145990d576766f20a03}} 
+void {\bfseries Handle\+Char} ()
+\item 
+void \mbox{\hyperlink{classylang_1_1Lexer_a26553e15d7a7457e5a8350245783bf3e}{Handle\+String}} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a43463a7d445b79a48eeb98f19f1d6680}\label{classylang_1_1Lexer_a43463a7d445b79a48eeb98f19f1d6680}} 
+void {\bfseries Handle\+Numeric} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a2f584ce95a5ea85479ffdd628c80beac}\label{classylang_1_1Lexer_a2f584ce95a5ea85479ffdd628c80beac}} 
+void {\bfseries Handle\+Alpha\+Numeric} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a8c5eccb0f67f4a6a3846c4765e353d97}\label{classylang_1_1Lexer_a8c5eccb0f67f4a6a3846c4765e353d97}} 
+void {\bfseries Handle\+Operator} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ad4a25628288f806c6b87a1f49ffa4b7f}\label{classylang_1_1Lexer_ad4a25628288f806c6b87a1f49ffa4b7f}} 
+bool {\bfseries Is\+EOF} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ char $>$ {\bfseries operators}
+\item 
+const std\+::vector$<$ std\+::string $>$ {\bfseries keywords}
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a92dc4b8e9bb31ec2df07d309e56f392c}\label{classylang_1_1Lexer_a92dc4b8e9bb31ec2df07d309e56f392c}} 
+std\+::map$<$ std\+::string, Type $>$ {\bfseries keyword\+\_\+map}
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a9ed0142ea197a9aee2a570579cdd1a39}\label{classylang_1_1Lexer_a9ed0142ea197a9aee2a570579cdd1a39}} 
+std\+::map$<$ std\+::string, Type $>$ {\bfseries identifier\+\_\+map}
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a882cd49f938a4385fd5840f40cd2d09b}\label{classylang_1_1Lexer_a882cd49f938a4385fd5840f40cd2d09b}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ErrorHandler}{Error\+Handler}} $>$ {\bfseries error\+\_\+handler} = nullptr
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ac4ecff89ea17a0edbc72247ab53d72ab}\label{classylang_1_1Lexer_ac4ecff89ea17a0edbc72247ab53d72ab}} 
+uint32\+\_\+t {\bfseries start\+\_\+of\+\_\+line\+\_\+index} = 0
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a83aec83d71e1577ad0ff1acb6c881c0a}\label{classylang_1_1Lexer_a83aec83d71e1577ad0ff1acb6c881c0a}} 
+uint32\+\_\+t {\bfseries src\+\_\+index} = 0
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ab623b54fd1f1b4919e309d69830518a6}\label{classylang_1_1Lexer_ab623b54fd1f1b4919e309d69830518a6}} 
+uint32\+\_\+t {\bfseries src\+\_\+length} = 0
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a49bd8353d3bd9d5189d405086f84f765}\label{classylang_1_1Lexer_a49bd8353d3bd9d5189d405086f84f765}} 
+uint32\+\_\+t {\bfseries line} = 1
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_a946a304780d08768b208fd1be5fc186f}\label{classylang_1_1Lexer_a946a304780d08768b208fd1be5fc186f}} 
+uint32\+\_\+t {\bfseries column} = 1
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_aa3881d9d3d60110ca1edb4bd353bcb95}\label{classylang_1_1Lexer_aa3881d9d3d60110ca1edb4bd353bcb95}} 
+std\+::string {\bfseries curr\+\_\+token} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_aee14993b9ea1bbd1b6abfbcd900abc2c}\label{classylang_1_1Lexer_aee14993b9ea1bbd1b6abfbcd900abc2c}} 
+std\+::string {\bfseries source} = \char`\"{}$<$n$>$\char`\"{}
+\item 
+\mbox{\Hypertarget{classylang_1_1Lexer_ab21cb7b965ab41cb0f633a898a68cbc0}\label{classylang_1_1Lexer_ab21cb7b965ab41cb0f633a898a68cbc0}} 
+std\+::vector$<$ \mbox{\hyperlink{structylang_1_1Token}{Token}} $>$ {\bfseries tokens} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+used internally by the ylang compiler to perform lexical analysis on the source code 
+
+\begin{DoxyNote}{Note}
+this class is not meant to be used by the end user 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classylang_1_1Lexer_ab4b3c995c24db913bff1e560f161dc91}\label{classylang_1_1Lexer_ab4b3c995c24db913bff1e560f161dc91}} 
+\index{ylang::Lexer@{ylang::Lexer}!Lexer@{Lexer}}
+\index{Lexer@{Lexer}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{Lexer()}{Lexer()}}
+{\footnotesize\ttfamily ylang\+::\+Lexer\+::\+Lexer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ErrorHandler}{Error\+Handler}} $>$}]{err\+\_\+handler,  }\item[{const std\+::string \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em err\+\_\+handler} & pointer to the error handler \\
+\hline
+{\em src} & source code to lex \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classylang_1_1Lexer_a0a6cefff84e3f8c109abe523a881ef6d}\label{classylang_1_1Lexer_a0a6cefff84e3f8c109abe523a881ef6d}} 
+\index{ylang::Lexer@{ylang::Lexer}!Advance@{Advance}}
+\index{Advance@{Advance}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{Advance()}{Advance()}}
+{\footnotesize\ttfamily void ylang\+::\+Lexer\+::\+Advance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+saves to current token and increments to next character 
+
+\mbox{\Hypertarget{classylang_1_1Lexer_a22fee939dbb73067178eeec25fc3ba53}\label{classylang_1_1Lexer_a22fee939dbb73067178eeec25fc3ba53}} 
+\index{ylang::Lexer@{ylang::Lexer}!Consume@{Consume}}
+\index{Consume@{Consume}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{Consume()}{Consume()}}
+{\footnotesize\ttfamily void ylang\+::\+Lexer\+::\+Consume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+increments to next character without saving to current token 
+
+\mbox{\Hypertarget{classylang_1_1Lexer_aef4e90dbfb36498dae23a383c62cb7ce}\label{classylang_1_1Lexer_aef4e90dbfb36498dae23a383c62cb7ce}} 
+\index{ylang::Lexer@{ylang::Lexer}!GetTokens@{GetTokens}}
+\index{GetTokens@{GetTokens}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{GetTokens()}{GetTokens()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{structylang_1_1Token}{Token}}$>$ ylang\+::\+Lexer\+::\+Get\+Tokens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Token$>$ vector of tokens 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classylang_1_1Lexer_aba22aa003d6112a56b66e29f3898554d}\label{classylang_1_1Lexer_aba22aa003d6112a56b66e29f3898554d}} 
+\index{ylang::Lexer@{ylang::Lexer}!HandleComment@{HandleComment}}
+\index{HandleComment@{HandleComment}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{HandleComment()}{HandleComment()}}
+{\footnotesize\ttfamily void ylang\+::\+Lexer\+::\+Handle\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]Handle comments \end{DoxyRefDesc}
+\mbox{\Hypertarget{classylang_1_1Lexer_a26553e15d7a7457e5a8350245783bf3e}\label{classylang_1_1Lexer_a26553e15d7a7457e5a8350245783bf3e}} 
+\index{ylang::Lexer@{ylang::Lexer}!HandleString@{HandleString}}
+\index{HandleString@{HandleString}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{HandleString()}{HandleString()}}
+{\footnotesize\ttfamily void ylang\+::\+Lexer\+::\+Handle\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Handle string literals \end{DoxyRefDesc}
+\mbox{\Hypertarget{classylang_1_1Lexer_a0f5bdcdcd3d29206979fa547dfc83bc2}\label{classylang_1_1Lexer_a0f5bdcdcd3d29206979fa547dfc83bc2}} 
+\index{ylang::Lexer@{ylang::Lexer}!InitTokenTypeMaps@{InitTokenTypeMaps}}
+\index{InitTokenTypeMaps@{InitTokenTypeMaps}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{InitTokenTypeMaps()}{InitTokenTypeMaps()}}
+{\footnotesize\ttfamily void ylang\+::\+Lexer\+::\+Init\+Token\+Type\+Maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+fills map with strings corresponfing ylang\+::\+Type to identify token types 
+
+\mbox{\Hypertarget{classylang_1_1Lexer_ab8996bf73e6f8ea91d904fae9b730b80}\label{classylang_1_1Lexer_ab8996bf73e6f8ea91d904fae9b730b80}} 
+\index{ylang::Lexer@{ylang::Lexer}!Lex@{Lex}}
+\index{Lex@{Lex}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{Lex()}{Lex()}}
+{\footnotesize\ttfamily bool ylang\+::\+Lexer\+::\+Lex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method called to lex the source code. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em ylang\+\_\+lexer\+\_\+error} & if unhandleable error is encountered \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classylang_1_1Lexer_a987444016955e9275c73ce894dd29562}\label{classylang_1_1Lexer_a987444016955e9275c73ce894dd29562}} 
+\index{ylang::Lexer@{ylang::Lexer}!NewLine@{NewLine}}
+\index{NewLine@{NewLine}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{NewLine()}{NewLine()}}
+{\footnotesize\ttfamily void ylang\+::\+Lexer\+::\+New\+Line (\begin{DoxyParamCaption}\item[{bool}]{iterate\+\_\+src\+\_\+index = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+iterates src if flag is set, infrements line and sets column to 1, also sets error helper variables to the correct values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterate\+\_\+src\+\_\+index} & (optional, default = true) ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classylang_1_1Lexer_a30712cab26ea4d2f09a9f57f17a85057}\label{classylang_1_1Lexer_a30712cab26ea4d2f09a9f57f17a85057}} 
+\index{ylang::Lexer@{ylang::Lexer}!Peek@{Peek}}
+\index{Peek@{Peek}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily char ylang\+::\+Lexer\+::\+Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+looks at current character while also checking bounds 
+
+\mbox{\Hypertarget{classylang_1_1Lexer_a32107e5b5926312746b26d624f5ec3f8}\label{classylang_1_1Lexer_a32107e5b5926312746b26d624f5ec3f8}} 
+\index{ylang::Lexer@{ylang::Lexer}!PeekNext@{PeekNext}}
+\index{PeekNext@{PeekNext}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{PeekNext()}{PeekNext()}}
+{\footnotesize\ttfamily char ylang\+::\+Lexer\+::\+Peek\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+looks at next character while also checking bounds 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classylang_1_1Lexer_a5c9c1504f966b197dad17a745f165374}\label{classylang_1_1Lexer_a5c9c1504f966b197dad17a745f165374}} 
+\index{ylang::Lexer@{ylang::Lexer}!keywords@{keywords}}
+\index{keywords@{keywords}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{keywords}{keywords}}
+{\footnotesize\ttfamily const std\+::vector$<$std\+::string$>$ ylang\+::\+Lexer\+::keywords\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{            }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}i8"{}}      , \textcolor{stringliteral}{"{}i16"{}}     , \textcolor{stringliteral}{"{}i32"{}}    , \textcolor{stringliteral}{"{}i64"{}}      ,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}u8"{}}      , \textcolor{stringliteral}{"{}u16"{}}     , \textcolor{stringliteral}{"{}u32"{}}    , \textcolor{stringliteral}{"{}u64"{}}      ,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}f32"{}}     , \textcolor{stringliteral}{"{}f64"{}}     , \textcolor{stringliteral}{"{}double"{}} , \textcolor{stringliteral}{"{}bool"{}}     , }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}char"{}}    , \textcolor{stringliteral}{"{}string"{}}  , \textcolor{stringliteral}{"{}byte"{}}   ,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}null"{}}   , \textcolor{stringliteral}{"{}void"{}}     , }
+\DoxyCodeLine{}
+\DoxyCodeLine{            }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}fn"{}}      ,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}if"{}}      , \textcolor{stringliteral}{"{}else"{}}    , \textcolor{stringliteral}{"{}for"{}}    , \textcolor{stringliteral}{"{}while"{}}    ,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}switch"{}}  , \textcolor{stringliteral}{"{}return"{}}  , \textcolor{stringliteral}{"{}break"{}}  , \textcolor{stringliteral}{"{}continue"{}} , }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}true"{}}    , \textcolor{stringliteral}{"{}false"{}}   , }
+\DoxyCodeLine{}
+\DoxyCodeLine{            }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}struct"{}}  , \textcolor{stringliteral}{"{}class"{}}   , \textcolor{stringliteral}{"{}object"{}} , \textcolor{stringliteral}{"{}enum"{}}     ,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}union"{}}   ,}
+\DoxyCodeLine{            }
+\DoxyCodeLine{            }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}namespace"{}},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}using"{}}   , \textcolor{stringliteral}{"{}import"{}}  , \textcolor{stringliteral}{"{}export"{}} , \textcolor{stringliteral}{"{}public"{}}   ,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}private"{}} , \textcolor{stringliteral}{"{}include"{}} ,}
+\DoxyCodeLine{}
+\DoxyCodeLine{            }
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}print"{}}}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classylang_1_1Lexer_a71aa20da14349408e8fdefb346c39884}\label{classylang_1_1Lexer_a71aa20da14349408e8fdefb346c39884}} 
+\index{ylang::Lexer@{ylang::Lexer}!operators@{operators}}
+\index{operators@{operators}!ylang::Lexer@{ylang::Lexer}}
+\doxysubsubsection{\texorpdfstring{operators}{operators}}
+{\footnotesize\ttfamily const std\+::vector$<$char$>$ ylang\+::\+Lexer\+::operators\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{            \textcolor{charliteral}{'+'} , \textcolor{charliteral}{'-\/'} , \textcolor{charliteral}{'*'} , \textcolor{charliteral}{'/'} , \textcolor{charliteral}{'\%'} ,}
+\DoxyCodeLine{            \textcolor{charliteral}{'('} , \textcolor{charliteral}{')'} , \textcolor{charliteral}{'\{'} , \textcolor{charliteral}{'\}'} , \textcolor{charliteral}{'['} , \textcolor{charliteral}{']'} ,}
+\DoxyCodeLine{            \textcolor{charliteral}{';'} , \textcolor{charliteral}{','} , \textcolor{charliteral}{'.'} , \textcolor{charliteral}{'"{}'} , \textcolor{charliteral}{'\(\backslash\)''} , \textcolor{charliteral}{':'} ,}
+\DoxyCodeLine{            \textcolor{charliteral}{'\$'} , \textcolor{charliteral}{'\#'} , \textcolor{charliteral}{'@'} , \textcolor{charliteral}{'!'} , \textcolor{charliteral}{'?'} , \textcolor{charliteral}{'\&'} ,}
+\DoxyCodeLine{            \textcolor{charliteral}{'|'} , \textcolor{charliteral}{'\string^'} , \textcolor{charliteral}{'\string~'} , \textcolor{charliteral}{'='} , \textcolor{charliteral}{'<'} , \textcolor{charliteral}{'>'}}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{lexer_8hpp}{lexer.\+hpp}}\item 
+YLang0.\+2/src/lexer.\+cpp\end{DoxyCompactItemize}

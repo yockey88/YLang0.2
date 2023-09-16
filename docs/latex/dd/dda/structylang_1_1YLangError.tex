@@ -1,0 +1,185 @@
+\hypertarget{structylang_1_1YLangError}{}\doxysection{ylang\+::YLang\+Error Struct Reference}
+\label{structylang_1_1YLangError}\index{ylang::YLangError@{ylang::YLangError}}
+
+
+Struct used to store errors in the error handler.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structylang_1_1YLangError_ad71be51f5a53cc2697fadf1c1d222ad0}{YLang\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structylang_1_1YLangError_a5837bab1d712bfe4c05fda53ba6878ad}{YLang\+Error}} (const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structylang_1_1YLangError_aa493c1699cd8936f2afc0d8436a643ce}{YLang\+Error}} (uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structylang_1_1YLangError_a8974441a5e4c95edbdd9beed19d15c5d}{YLang\+Error}} (\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}} \mbox{\hyperlink{structylang_1_1YLangError_ab3babddb22041fba6d4dd1364b107159}{level}}, uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structylang_1_1YLangError_ac2dd66c3685883a2c0017e4615a6c6a0}{YLang\+Error}} (const \mbox{\hyperlink{classylang_1_1ylang__lexer__error}{ylang\+\_\+lexer\+\_\+error}} \&error)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structylang_1_1YLangError_acab1f7ad72fdc5ca4f4cc283f51c4480}{YLang\+Error}} (const \mbox{\hyperlink{classylang_1_1ylang__parser__error}{ylang\+\_\+parser\+\_\+error}} \&error)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structylang_1_1YLangError_a948c979d461b17a365666a37e046b5c4}{YLang\+Error}} (const \mbox{\hyperlink{classylang_1_1ylang__compiler__error}{ylang\+\_\+compiler\+\_\+error}} \&error)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}} \mbox{\hyperlink{structylang_1_1YLangError_ab3babddb22041fba6d4dd1364b107159}{level}} = Error\+Level\+::\+UNDEFINED\+\_\+\+BEHAVIOR
+\item 
+\mbox{\Hypertarget{structylang_1_1YLangError_ad7f2a14e5eb1278c4dff6f1179778b9f}\label{structylang_1_1YLangError_ad7f2a14e5eb1278c4dff6f1179778b9f}} 
+uint32\+\_\+t {\bfseries line} = 0
+\item 
+\mbox{\Hypertarget{structylang_1_1YLangError_a7b042821e323a6b75e88a1ad4519c007}\label{structylang_1_1YLangError_a7b042821e323a6b75e88a1ad4519c007}} 
+uint32\+\_\+t {\bfseries column} = 0
+\item 
+\mbox{\Hypertarget{structylang_1_1YLangError_a84d397120e35d40695b363e6d0e68cde}\label{structylang_1_1YLangError_a84d397120e35d40695b363e6d0e68cde}} 
+std\+::string {\bfseries msg} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct used to store errors in the error handler. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structylang_1_1YLangError_ad71be51f5a53cc2697fadf1c1d222ad0}\label{structylang_1_1YLangError_ad71be51f5a53cc2697fadf1c1d222ad0}} 
+\index{ylang::YLangError@{ylang::YLangError}!YLangError@{YLangError}}
+\index{YLangError@{YLangError}!ylang::YLangError@{ylang::YLangError}}
+\doxysubsubsection{\texorpdfstring{YLangError()}{YLangError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily ylang\+::\+YLang\+Error\+::\+YLang\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. 
+
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{structylang_1_1YLangError_a5837bab1d712bfe4c05fda53ba6878ad}\label{structylang_1_1YLangError_a5837bab1d712bfe4c05fda53ba6878ad}} 
+\index{ylang::YLangError@{ylang::YLangError}!YLangError@{YLangError}}
+\index{YLangError@{YLangError}!ylang::YLangError@{ylang::YLangError}}
+\doxysubsubsection{\texorpdfstring{YLangError()}{YLangError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily ylang\+::\+YLang\+Error\+::\+YLang\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{structylang_1_1YLangError_aa493c1699cd8936f2afc0d8436a643ce}\label{structylang_1_1YLangError_aa493c1699cd8936f2afc0d8436a643ce}} 
+\index{ylang::YLangError@{ylang::YLangError}!YLangError@{YLangError}}
+\index{YLangError@{YLangError}!ylang::YLangError@{ylang::YLangError}}
+\doxysubsubsection{\texorpdfstring{YLangError()}{YLangError()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily ylang\+::\+YLang\+Error\+::\+YLang\+Error (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is the recommended constructor to use when throwing errors 
+\end{DoxyNote}
+\mbox{\Hypertarget{structylang_1_1YLangError_a8974441a5e4c95edbdd9beed19d15c5d}\label{structylang_1_1YLangError_a8974441a5e4c95edbdd9beed19d15c5d}} 
+\index{ylang::YLangError@{ylang::YLangError}!YLangError@{YLangError}}
+\index{YLangError@{YLangError}!ylang::YLangError@{ylang::YLangError}}
+\doxysubsubsection{\texorpdfstring{YLangError()}{YLangError()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily ylang\+::\+YLang\+Error\+::\+YLang\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}}}]{level,  }\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & the level of the error \\
+\hline
+{\em line} & the line number of the error \\
+\hline
+{\em column} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structylang_1_1YLangError_ac2dd66c3685883a2c0017e4615a6c6a0}\label{structylang_1_1YLangError_ac2dd66c3685883a2c0017e4615a6c6a0}} 
+\index{ylang::YLangError@{ylang::YLangError}!YLangError@{YLangError}}
+\index{YLangError@{YLangError}!ylang::YLangError@{ylang::YLangError}}
+\doxysubsubsection{\texorpdfstring{YLangError()}{YLangError()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily ylang\+::\+YLang\+Error\+::\+YLang\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classylang_1_1ylang__lexer__error}{ylang\+\_\+lexer\+\_\+error}} \&}]{error }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the ylang lexer error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structylang_1_1YLangError_acab1f7ad72fdc5ca4f4cc283f51c4480}\label{structylang_1_1YLangError_acab1f7ad72fdc5ca4f4cc283f51c4480}} 
+\index{ylang::YLangError@{ylang::YLangError}!YLangError@{YLangError}}
+\index{YLangError@{YLangError}!ylang::YLangError@{ylang::YLangError}}
+\doxysubsubsection{\texorpdfstring{YLangError()}{YLangError()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily ylang\+::\+YLang\+Error\+::\+YLang\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classylang_1_1ylang__parser__error}{ylang\+\_\+parser\+\_\+error}} \&}]{error }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the ylang parser error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structylang_1_1YLangError_a948c979d461b17a365666a37e046b5c4}\label{structylang_1_1YLangError_a948c979d461b17a365666a37e046b5c4}} 
+\index{ylang::YLangError@{ylang::YLangError}!YLangError@{YLangError}}
+\index{YLangError@{YLangError}!ylang::YLangError@{ylang::YLangError}}
+\doxysubsubsection{\texorpdfstring{YLangError()}{YLangError()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily ylang\+::\+YLang\+Error\+::\+YLang\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classylang_1_1ylang__compiler__error}{ylang\+\_\+compiler\+\_\+error}} \&}]{error }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{structylang_1_1YLangError}{YLang\+Error}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the ylang compiler error \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structylang_1_1YLangError_ab3babddb22041fba6d4dd1364b107159}\label{structylang_1_1YLangError_ab3babddb22041fba6d4dd1364b107159}} 
+\index{ylang::YLangError@{ylang::YLangError}!level@{level}}
+\index{level@{level}!ylang::YLangError@{ylang::YLangError}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}} ylang\+::\+YLang\+Error\+::level = Error\+Level\+::\+UNDEFINED\+\_\+\+BEHAVIOR}
+
+\begin{DoxyNote}{Note}
+we initialize the level to undefined behavior for the sake of safety 
+\end{DoxyNote}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{errors_8hpp}{errors.\+hpp}}\item 
+YLang0.\+2/src/errors.\+cpp\end{DoxyCompactItemize}

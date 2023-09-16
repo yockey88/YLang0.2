@@ -1,0 +1,100 @@
+\hypertarget{classylang_1_1interpreter__error}{}\doxysection{ylang\+::interpreter\+\_\+error Class Reference}
+\label{classylang_1_1interpreter__error}\index{ylang::interpreter\_error@{ylang::interpreter\_error}}
+
+
+Class used to throw compiler errors with line and column information with help to specify which part of the compiler the error message is coming from.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::interpreter\+\_\+error\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::interpreter\+\_\+error\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classylang_1_1interpreter__error_a9a3f93188327dac2550b8277563d44a5}{interpreter\+\_\+error}} (const std\+::string \&msg)
+\item 
+\mbox{\hyperlink{classylang_1_1interpreter__error_a1dd0fe75f19e795f0ca5be39974d32d1}{interpreter\+\_\+error}} (uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\item 
+\mbox{\hyperlink{classylang_1_1interpreter__error_a5f291f4eea06d40044f873cd474c9a59}{interpreter\+\_\+error}} (Error\+Level level, uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1interpreter__error_ae633f5695a38fba007382951ed0f38f2}\label{classylang_1_1interpreter__error_ae633f5695a38fba007382951ed0f38f2}} 
+Error\+Level {\bfseries level} = Error\+Level\+::\+UNDEFINED\+\_\+\+BEHAVIOR
+\item 
+\mbox{\Hypertarget{classylang_1_1interpreter__error_a4ca44f22e7bcc4a3c811ad132861fa2d}\label{classylang_1_1interpreter__error_a4ca44f22e7bcc4a3c811ad132861fa2d}} 
+uint32\+\_\+t {\bfseries line} = 0
+\item 
+\mbox{\Hypertarget{classylang_1_1interpreter__error_ade24c25ca5652c0ee0b4920221acc59b}\label{classylang_1_1interpreter__error_ade24c25ca5652c0ee0b4920221acc59b}} 
+uint32\+\_\+t {\bfseries column} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to throw compiler errors with line and column information with help to specify which part of the compiler the error message is coming from. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classylang_1_1interpreter__error_a9a3f93188327dac2550b8277563d44a5}\label{classylang_1_1interpreter__error_a9a3f93188327dac2550b8277563d44a5}} 
+\index{ylang::interpreter\_error@{ylang::interpreter\_error}!interpreter\_error@{interpreter\_error}}
+\index{interpreter\_error@{interpreter\_error}!ylang::interpreter\_error@{ylang::interpreter\_error}}
+\doxysubsubsection{\texorpdfstring{interpreter\_error()}{interpreter\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily ylang\+::interpreter\+\_\+error\+::interpreter\+\_\+error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1interpreter__error_a1dd0fe75f19e795f0ca5be39974d32d1}\label{classylang_1_1interpreter__error_a1dd0fe75f19e795f0ca5be39974d32d1}} 
+\index{ylang::interpreter\_error@{ylang::interpreter\_error}!interpreter\_error@{interpreter\_error}}
+\index{interpreter\_error@{interpreter\_error}!ylang::interpreter\_error@{ylang::interpreter\_error}}
+\doxysubsubsection{\texorpdfstring{interpreter\_error()}{interpreter\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily ylang\+::interpreter\+\_\+error\+::interpreter\+\_\+error (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1interpreter__error_a5f291f4eea06d40044f873cd474c9a59}\label{classylang_1_1interpreter__error_a5f291f4eea06d40044f873cd474c9a59}} 
+\index{ylang::interpreter\_error@{ylang::interpreter\_error}!interpreter\_error@{interpreter\_error}}
+\index{interpreter\_error@{interpreter\_error}!ylang::interpreter\_error@{ylang::interpreter\_error}}
+\doxysubsubsection{\texorpdfstring{interpreter\_error()}{interpreter\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily ylang\+::interpreter\+\_\+error\+::interpreter\+\_\+error (\begin{DoxyParamCaption}\item[{Error\+Level}]{level,  }\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & the level of the error \\
+\hline
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{errors_8hpp}{errors.\+hpp}}\end{DoxyCompactItemize}

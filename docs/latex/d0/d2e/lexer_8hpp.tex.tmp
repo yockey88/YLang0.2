@@ -1,0 +1,38 @@
+\hypertarget{lexer_8hpp}{}\doxysection{YLang0.2/include/lexer.hpp File Reference}
+\label{lexer_8hpp}\index{YLang0.2/include/lexer.hpp@{YLang0.2/include/lexer.hpp}}
+
+
+Lexer class header file, defines the interface for the Lexer class used internally by the ylang compiler.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include \char`\"{}defines.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}errors.\+hpp\char`\"{}}\newline
+Include dependency graph for lexer.\+hpp\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classylang_1_1Lexer}{ylang\+::\+Lexer}}
+\begin{DoxyCompactList}\small\item\em used internally by the ylang compiler to perform lexical analysis on the source code \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceylang}{ylang}}
+\begin{DoxyCompactList}\small\item\em contains all the ylang compiler related code \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lexer class header file, defines the interface for the Lexer class used internally by the ylang compiler. 
+
+\begin{DoxyVersion}{Version}
+0.\+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+7-\/7-\/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Y 
+\end{DoxyAuthor}

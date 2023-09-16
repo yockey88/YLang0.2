@@ -1,0 +1,112 @@
+\hypertarget{classylang_1_1ylang__lexer__error}{}\doxysection{ylang\+::ylang\+\_\+lexer\+\_\+error Class Reference}
+\label{classylang_1_1ylang__lexer__error}\index{ylang::ylang\_lexer\_error@{ylang::ylang\_lexer\_error}}
+
+
+Class used to throw lexer errors with line and column information with help to specify which part of the compiler the error message is coming from.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::ylang\+\_\+lexer\+\_\+error\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::ylang\+\_\+lexer\+\_\+error\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classylang_1_1ylang__lexer__error_a44bfac6e8c68e088adcda44a95486027}{ylang\+\_\+lexer\+\_\+error}} (const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct anew ylang lexer error object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classylang_1_1ylang__lexer__error_adf02f6ee37c6aeee45ff0de18a5ed41c}{ylang\+\_\+lexer\+\_\+error}} (uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct a new ylang compiler error object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classylang_1_1ylang__lexer__error_abd67dd7a3f432f222bbfb36f8e14f702}{ylang\+\_\+lexer\+\_\+error}} (\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}} level, uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Construct anew ylang lexer error object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ylang__lexer__error_a00289f2f26244703972f5834b6ff2261}\label{classylang_1_1ylang__lexer__error_a00289f2f26244703972f5834b6ff2261}} 
+\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}} {\bfseries level} = Error\+Level\+::\+UNDEFINED\+\_\+\+BEHAVIOR
+\item 
+\mbox{\Hypertarget{classylang_1_1ylang__lexer__error_a0478763c7cf43dfcde0c8f4dc1be1cbe}\label{classylang_1_1ylang__lexer__error_a0478763c7cf43dfcde0c8f4dc1be1cbe}} 
+uint32\+\_\+t {\bfseries line} = 0
+\item 
+\mbox{\Hypertarget{classylang_1_1ylang__lexer__error_ac4449e71b0bb9ea576dd9d731c4600ec}\label{classylang_1_1ylang__lexer__error_ac4449e71b0bb9ea576dd9d731c4600ec}} 
+uint32\+\_\+t {\bfseries column} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to throw lexer errors with line and column information with help to specify which part of the compiler the error message is coming from. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classylang_1_1ylang__lexer__error_a44bfac6e8c68e088adcda44a95486027}\label{classylang_1_1ylang__lexer__error_a44bfac6e8c68e088adcda44a95486027}} 
+\index{ylang::ylang\_lexer\_error@{ylang::ylang\_lexer\_error}!ylang\_lexer\_error@{ylang\_lexer\_error}}
+\index{ylang\_lexer\_error@{ylang\_lexer\_error}!ylang::ylang\_lexer\_error@{ylang::ylang\_lexer\_error}}
+\doxysubsubsection{\texorpdfstring{ylang\_lexer\_error()}{ylang\_lexer\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily ylang\+::ylang\+\_\+lexer\+\_\+error\+::ylang\+\_\+lexer\+\_\+error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct anew ylang lexer error object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1ylang__lexer__error_adf02f6ee37c6aeee45ff0de18a5ed41c}\label{classylang_1_1ylang__lexer__error_adf02f6ee37c6aeee45ff0de18a5ed41c}} 
+\index{ylang::ylang\_lexer\_error@{ylang::ylang\_lexer\_error}!ylang\_lexer\_error@{ylang\_lexer\_error}}
+\index{ylang\_lexer\_error@{ylang\_lexer\_error}!ylang::ylang\_lexer\_error@{ylang::ylang\_lexer\_error}}
+\doxysubsubsection{\texorpdfstring{ylang\_lexer\_error()}{ylang\_lexer\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily ylang\+::ylang\+\_\+lexer\+\_\+error\+::ylang\+\_\+lexer\+\_\+error (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new ylang compiler error object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1ylang__lexer__error_abd67dd7a3f432f222bbfb36f8e14f702}\label{classylang_1_1ylang__lexer__error_abd67dd7a3f432f222bbfb36f8e14f702}} 
+\index{ylang::ylang\_lexer\_error@{ylang::ylang\_lexer\_error}!ylang\_lexer\_error@{ylang\_lexer\_error}}
+\index{ylang\_lexer\_error@{ylang\_lexer\_error}!ylang::ylang\_lexer\_error@{ylang::ylang\_lexer\_error}}
+\doxysubsubsection{\texorpdfstring{ylang\_lexer\_error()}{ylang\_lexer\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily ylang\+::ylang\+\_\+lexer\+\_\+error\+::ylang\+\_\+lexer\+\_\+error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}{Error\+Level}}}]{level,  }\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct anew ylang lexer error object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & the level of the error \\
+\hline
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{errors_8hpp}{errors.\+hpp}}\end{DoxyCompactItemize}

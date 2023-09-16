@@ -1,0 +1,205 @@
+\hypertarget{defines_8hpp}{}\doxysection{YLang0.2/include/defines.hpp File Reference}
+\label{defines_8hpp}\index{YLang0.2/include/defines.hpp@{YLang0.2/include/defines.hpp}}
+
+
+contains main definitions and other core information  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$variant$>$}\newline
+Include dependency graph for defines.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structylang_1_1Token}{ylang\+::\+Token}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceylang}{ylang}}
+\begin{DoxyCompactList}\small\item\em contains all the ylang compiler related code \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{defines_8hpp_af6551f0b4c3964c3128f808e7bf987c7}\label{defines_8hpp_af6551f0b4c3964c3128f808e7bf987c7}} 
+\#define {\bfseries DEBUG\+\_\+\+PRINT}(x)~(void)0;
+\item 
+\mbox{\Hypertarget{defines_8hpp_a9475a7b2a2bae2d943ec927b063a8876}\label{defines_8hpp_a9475a7b2a2bae2d943ec927b063a8876}} 
+\#define {\bfseries UNIMPLIMENTED}~(void)0;
+\item 
+\mbox{\Hypertarget{defines_8hpp_afefd5bd8dcaa6171f766905d0b937eb6}\label{defines_8hpp_afefd5bd8dcaa6171f766905d0b937eb6}} 
+\#define {\bfseries UNIMPLIMENTED\+\_\+\+DEBUG}(x)~(void)0;
+\item 
+\mbox{\Hypertarget{defines_8hpp_a5fd132bb578c9c736fb3cd1a20afd3a7}\label{defines_8hpp_a5fd132bb578c9c736fb3cd1a20afd3a7}} 
+\#define {\bfseries UNIMPLIMENTED\+\_\+\+RETURN}(x)~(void)0;
+\item 
+\mbox{\Hypertarget{defines_8hpp_a0d524f9e52d548e402bba773212b4639}\label{defines_8hpp_a0d524f9e52d548e402bba773212b4639}} 
+\#define {\bfseries UNIMPLIMENTED\+\_\+\+RETURN\+\_\+\+DEBUG}(msg,  x)~(void)0;
+\item 
+\mbox{\Hypertarget{defines_8hpp_aca68c0d4ac8df0838e209fb5300f7be3}\label{defines_8hpp_aca68c0d4ac8df0838e209fb5300f7be3}} 
+\#define {\bfseries ASSERT}(x)~(void)0;
+\item 
+\mbox{\Hypertarget{defines_8hpp_a897f5af994ad532a3babb3c75a913083}\label{defines_8hpp_a897f5af994ad532a3babb3c75a913083}} 
+\#define {\bfseries PRINT\+\_\+\+TOKEN}(t)~(void)0;
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceylang_a114ea2bf19358c54c6f601e53fa8456f}\label{namespaceylang_a114ea2bf19358c54c6f601e53fa8456f}} 
+enum class {\bfseries Type} \{ \newline
+{\bfseries START\+\_\+\+OF\+\_\+\+FILE}
+, {\bfseries KW\+\_\+\+I8}
+, {\bfseries KW\+\_\+\+I16}
+, {\bfseries KW\+\_\+\+I32}
+, \newline
+{\bfseries KW\+\_\+\+I64}
+, {\bfseries KW\+\_\+\+U8}
+, {\bfseries KW\+\_\+\+U16}
+, {\bfseries KW\+\_\+\+U32}
+, \newline
+{\bfseries KW\+\_\+\+U64}
+, {\bfseries KW\+\_\+\+F32}
+, {\bfseries KW\+\_\+\+F64}
+, {\bfseries KW\+\_\+\+BOOL}
+, \newline
+{\bfseries KW\+\_\+\+CHAR}
+, {\bfseries KW\+\_\+\+STRING}
+, {\bfseries KW\+\_\+\+BYTE}
+, {\bfseries KW\+\_\+\+NULL}
+, \newline
+{\bfseries KW\+\_\+\+VOID}
+, {\bfseries KW\+\_\+\+FN}
+, {\bfseries KW\+\_\+\+IF}
+, {\bfseries KW\+\_\+\+ELSE}
+, \newline
+{\bfseries KW\+\_\+\+FOR}
+, {\bfseries KW\+\_\+\+WHILE}
+, {\bfseries KW\+\_\+\+SWITCH}
+, {\bfseries KW\+\_\+\+RETURN}
+, \newline
+{\bfseries KW\+\_\+\+BREAK}
+, {\bfseries KW\+\_\+\+CONTINUE}
+, {\bfseries KW\+\_\+\+TRUE}
+, {\bfseries KW\+\_\+\+FALSE}
+, \newline
+{\bfseries KW\+\_\+\+STRUCT}
+, {\bfseries KW\+\_\+\+CLASS}
+, {\bfseries KW\+\_\+\+OBJECT}
+, {\bfseries KW\+\_\+\+ENUM}
+, \newline
+{\bfseries KW\+\_\+\+UNION}
+, {\bfseries KW\+\_\+\+NAMESPACE}
+, {\bfseries KW\+\_\+\+USING}
+, {\bfseries KW\+\_\+\+IMPORT}
+, \newline
+{\bfseries KW\+\_\+\+EXPORT}
+, {\bfseries KW\+\_\+\+PUBLIC}
+, {\bfseries KW\+\_\+\+PRIVATE}
+, {\bfseries KW\+\_\+\+INCLUDE}
+, \newline
+{\bfseries KW\+\_\+\+PRINT}
+, {\bfseries IDENTIFIER}
+, {\bfseries OP\+\_\+\+ADD}
+, {\bfseries OP\+\_\+\+SUB}
+, \newline
+{\bfseries OP\+\_\+\+MUL}
+, {\bfseries OP\+\_\+\+DIV}
+, {\bfseries OP\+\_\+\+MOD}
+, {\bfseries OP\+\_\+\+OPEN\+\_\+\+PAREN}
+, \newline
+{\bfseries OP\+\_\+\+CLOSE\+\_\+\+PAREN}
+, {\bfseries OP\+\_\+\+OPEN\+\_\+\+BRACE}
+, {\bfseries OP\+\_\+\+CLOSE\+\_\+\+BRACE}
+, {\bfseries OP\+\_\+\+OPEN\+\_\+\+BRACKET}
+, \newline
+{\bfseries OP\+\_\+\+CLOSE\+\_\+\+BRACKET}
+, {\bfseries OP\+\_\+\+SEMICOLON}
+, {\bfseries OP\+\_\+\+COMMA}
+, {\bfseries OP\+\_\+\+DOT}
+, \newline
+{\bfseries OP\+\_\+\+COLON}
+, {\bfseries OP\+\_\+\+DOLLAR}
+, {\bfseries OP\+\_\+\+HASH}
+, {\bfseries OP\+\_\+\+AT}
+, \newline
+{\bfseries OP\+\_\+\+EXCLAMATION}
+, {\bfseries OP\+\_\+\+QUESTION}
+, {\bfseries OP\+\_\+\+AMPERSAND}
+, {\bfseries OP\+\_\+\+ASSIGN}
+, \newline
+{\bfseries OP\+\_\+\+LESS\+\_\+\+THAN}
+, {\bfseries OP\+\_\+\+GREATER\+\_\+\+THAN}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+OR}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+AND}
+, \newline
+{\bfseries OP\+\_\+\+XOR}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+NOT}
+, {\bfseries OP\+\_\+\+ADD\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+SUB\+\_\+\+ASSIGN}
+, \newline
+{\bfseries OP\+\_\+\+MUL\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+DIV\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+MOD\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+EQUALS}
+, \newline
+{\bfseries OP\+\_\+\+NOT\+\_\+\+EQUAL}
+, {\bfseries OP\+\_\+\+LESS\+\_\+\+THAN\+\_\+\+EQUAL}
+, {\bfseries OP\+\_\+\+GREATER\+\_\+\+THAN\+\_\+\+EQUAL}
+, {\bfseries OP\+\_\+\+LOGICAL\+\_\+\+AND}
+, \newline
+{\bfseries OP\+\_\+\+LOGICAL\+\_\+\+OR}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+OR\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+AND\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+XOR\+\_\+\+ASSIGN}
+, \newline
+{\bfseries OP\+\_\+\+BIT\+\_\+\+NOT\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+LEFT\+\_\+\+SHIFT}
+, {\bfseries OP\+\_\+\+RIGHT\+\_\+\+SHIFT}
+, {\bfseries OP\+\_\+\+LEFT\+\_\+\+SHIFT\+\_\+\+ASSIGN}
+, \newline
+{\bfseries OP\+\_\+\+RIGHT\+\_\+\+SHIFT\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+INCREMENT}
+, {\bfseries OP\+\_\+\+DECREMENT}
+, {\bfseries OP\+\_\+\+ARROW}
+, \newline
+{\bfseries OP\+\_\+\+SCOPE}
+, {\bfseries OP\+\_\+\+CAPTURE}
+, {\bfseries LIT\+\_\+\+INT}
+, {\bfseries LIT\+\_\+\+HEX}
+, \newline
+{\bfseries LIT\+\_\+\+FLOAT}
+, {\bfseries LIT\+\_\+\+CHAR}
+, {\bfseries LIT\+\_\+\+STRING}
+, {\bfseries COMMENT}
+, \newline
+{\bfseries ERROR\+\_\+\+TOKEN}
+, {\bfseries END\+\_\+\+OF\+\_\+\+FILE}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceylang_a0d95981f3836d6d6cf1d4bd7fca96424}\label{namespaceylang_a0d95981f3836d6d6cf1d4bd7fca96424}} 
+static const std\+::string {\bfseries ylang\+::\+YLANG\+\_\+\+VERSION} = \char`\"{}0.\+0.\+2\char`\"{}
+\item 
+\mbox{\Hypertarget{namespaceylang_a4ef0cb7688698afc52921510e4fbb847}\label{namespaceylang_a4ef0cb7688698afc52921510e4fbb847}} 
+static const std\+::string {\bfseries ylang\+::\+Token\+Type\+Strings} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+contains main definitions and other core information 
+
+\begin{DoxyVersion}{Version}
+0.\+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+7-\/7-\/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Y 
+\end{DoxyAuthor}

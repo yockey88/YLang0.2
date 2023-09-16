@@ -1,0 +1,52 @@
+\hypertarget{classylang_1_1ASTVarStmnt}{}\doxysection{ylang\+::ASTVar\+Stmnt Class Reference}
+\label{classylang_1_1ASTVarStmnt}\index{ylang::ASTVarStmnt@{ylang::ASTVarStmnt}}
+
+
+Class used to represent a variable statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}.  
+
+
+
+
+{\ttfamily \#include $<$ast.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::ASTVar\+Stmnt\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::ASTVar\+Stmnt\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarStmnt_a06b27633efd5605029e22dcd63b1fd1f}\label{classylang_1_1ASTVarStmnt_a06b27633efd5605029e22dcd63b1fd1f}} 
+{\bfseries ASTVar\+Stmnt} (\mbox{\hyperlink{structylang_1_1Token}{Token}} type, \mbox{\hyperlink{structylang_1_1Token}{Token}} name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ initializer)
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarStmnt_ae28f3a0d80432ce9409e0a913292e218}\label{classylang_1_1ASTVarStmnt_ae28f3a0d80432ce9409e0a913292e218}} 
+virtual void {\bfseries Accept} (\mbox{\hyperlink{classylang_1_1ExprVisitor}{Expr\+Visitor}} \&visitor) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarStmnt_a2c0f06ec5aab6d5005e1cfa66632dcb6}\label{classylang_1_1ASTVarStmnt_a2c0f06ec5aab6d5005e1cfa66632dcb6}} 
+virtual void {\bfseries Print} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarStmnt_ae678fa0bb780e3e9dba13d3030b1645d}\label{classylang_1_1ASTVarStmnt_ae678fa0bb780e3e9dba13d3030b1645d}} 
+\mbox{\hyperlink{structylang_1_1Token}{Token}} {\bfseries type}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarStmnt_a0e5ff3e61c298fa5635966570e3c8be5}\label{classylang_1_1ASTVarStmnt_a0e5ff3e61c298fa5635966570e3c8be5}} 
+\mbox{\hyperlink{structylang_1_1Token}{Token}} {\bfseries name}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarStmnt_aad0557c2c51627167f6d4629fba68126}\label{classylang_1_1ASTVarStmnt_aad0557c2c51627167f6d4629fba68126}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries initializer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to represent a variable statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/ast.\+hpp\item 
+YLang0.\+2/src/ast.\+cpp\end{DoxyCompactItemize}

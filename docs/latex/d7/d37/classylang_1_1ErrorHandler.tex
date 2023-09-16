@@ -1,0 +1,126 @@
+\hypertarget{classylang_1_1ErrorHandler}{}\doxysection{ylang\+::Error\+Handler Class Reference}
+\label{classylang_1_1ErrorHandler}\index{ylang::ErrorHandler@{ylang::ErrorHandler}}
+
+
+Class used to handle errors.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classylang_1_1ErrorHandler_a93ae5a8a0e2ec55c78328617730bbb2d}{Submit\+Error}} (const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&error)
+\begin{DoxyCompactList}\small\item\em Add an error to the error queue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classylang_1_1ErrorHandler_a8244c3eea4b2feb386b1ed65e6c94133}{Is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Check if the error queue is empty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classylang_1_1ErrorHandler_a5224d7c9d1318901aa53b63d8af0f478}{Flush\+Errors}} ()
+\begin{DoxyCompactList}\small\item\em Flush the error queue if parse was aborted. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_af7af380fbbefee2900fbaae6aa48faef}\label{classylang_1_1ErrorHandler_af7af380fbbefee2900fbaae6aa48faef}} 
+void {\bfseries Clear\+Errors} ()
+\item 
+void \mbox{\hyperlink{classylang_1_1ErrorHandler_a2729d3e9713797ed871766951bccf82f}{Handle\+Lexer\+Error}} (const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&error, const std\+::string \&src, uint32\+\_\+t line\+\_\+strt\+\_\+index, uint32\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Formats and prints lexer error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classylang_1_1ErrorHandler_a2ff49bca3cfad773b9b7f4ea3878cd71}{Handle\+Parser\+Error}} (const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&error)
+\begin{DoxyCompactList}\small\item\em Formats and prints parser error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classylang_1_1ErrorHandler_ad05eb4503a24d358165d2e886e0581a7}{Handle\+Runtime\+Error}} (const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&error)
+\begin{DoxyCompactList}\small\item\em Formats and prints interpreter error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_a2b04e6e89b023490915e1944fd3a1bf2}\label{classylang_1_1ErrorHandler_a2b04e6e89b023490915e1944fd3a1bf2}} 
+std\+::string {\bfseries Format\+Lexer\+Error} (const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&error, const std\+::string \&src, uint32\+\_\+t line\+\_\+strt\+\_\+index, uint32\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_a9f49f353f17eb56feeeac93adbd0cfc6}\label{classylang_1_1ErrorHandler_a9f49f353f17eb56feeeac93adbd0cfc6}} 
+std\+::string {\bfseries Format\+Error} (const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&err)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_a1e317e7af3bd752727a6a554031c9a91}\label{classylang_1_1ErrorHandler_a1e317e7af3bd752727a6a554031c9a91}} 
+std\+::stack$<$ \mbox{\hyperlink{structylang_1_1Error}{Error}} $>$ {\bfseries error\+\_\+queue}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to handle errors. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_a5224d7c9d1318901aa53b63d8af0f478}\label{classylang_1_1ErrorHandler_a5224d7c9d1318901aa53b63d8af0f478}} 
+\index{ylang::ErrorHandler@{ylang::ErrorHandler}!FlushErrors@{FlushErrors}}
+\index{FlushErrors@{FlushErrors}!ylang::ErrorHandler@{ylang::ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{FlushErrors()}{FlushErrors()}}
+{\footnotesize\ttfamily void ylang\+::\+Error\+Handler\+::\+Flush\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flush the error queue if parse was aborted. 
+
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_a2729d3e9713797ed871766951bccf82f}\label{classylang_1_1ErrorHandler_a2729d3e9713797ed871766951bccf82f}} 
+\index{ylang::ErrorHandler@{ylang::ErrorHandler}!HandleLexerError@{HandleLexerError}}
+\index{HandleLexerError@{HandleLexerError}!ylang::ErrorHandler@{ylang::ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{HandleLexerError()}{HandleLexerError()}}
+{\footnotesize\ttfamily void ylang\+::\+Error\+Handler\+::\+Handle\+Lexer\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&}]{error,  }\item[{const std\+::string \&}]{src,  }\item[{uint32\+\_\+t}]{line\+\_\+strt\+\_\+index,  }\item[{uint32\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Formats and prints lexer error. 
+
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_a2ff49bca3cfad773b9b7f4ea3878cd71}\label{classylang_1_1ErrorHandler_a2ff49bca3cfad773b9b7f4ea3878cd71}} 
+\index{ylang::ErrorHandler@{ylang::ErrorHandler}!HandleParserError@{HandleParserError}}
+\index{HandleParserError@{HandleParserError}!ylang::ErrorHandler@{ylang::ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{HandleParserError()}{HandleParserError()}}
+{\footnotesize\ttfamily void ylang\+::\+Error\+Handler\+::\+Handle\+Parser\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&}]{error }\end{DoxyParamCaption})}
+
+
+
+Formats and prints parser error. 
+
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_ad05eb4503a24d358165d2e886e0581a7}\label{classylang_1_1ErrorHandler_ad05eb4503a24d358165d2e886e0581a7}} 
+\index{ylang::ErrorHandler@{ylang::ErrorHandler}!HandleRuntimeError@{HandleRuntimeError}}
+\index{HandleRuntimeError@{HandleRuntimeError}!ylang::ErrorHandler@{ylang::ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{HandleRuntimeError()}{HandleRuntimeError()}}
+{\footnotesize\ttfamily void ylang\+::\+Error\+Handler\+::\+Handle\+Runtime\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&}]{error }\end{DoxyParamCaption})}
+
+
+
+Formats and prints interpreter error. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]spit out stack trace \end{DoxyRefDesc}
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_a8244c3eea4b2feb386b1ed65e6c94133}\label{classylang_1_1ErrorHandler_a8244c3eea4b2feb386b1ed65e6c94133}} 
+\index{ylang::ErrorHandler@{ylang::ErrorHandler}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!ylang::ErrorHandler@{ylang::ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily bool ylang\+::\+Error\+Handler\+::\+Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the error queue is empty. 
+
+\begin{DoxyReturn}{Returns}
+bool \+: true if the error queue is empty, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classylang_1_1ErrorHandler_a93ae5a8a0e2ec55c78328617730bbb2d}\label{classylang_1_1ErrorHandler_a93ae5a8a0e2ec55c78328617730bbb2d}} 
+\index{ylang::ErrorHandler@{ylang::ErrorHandler}!SubmitError@{SubmitError}}
+\index{SubmitError@{SubmitError}!ylang::ErrorHandler@{ylang::ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{SubmitError()}{SubmitError()}}
+{\footnotesize\ttfamily void ylang\+::\+Error\+Handler\+::\+Submit\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structylang_1_1Error}{Error}} \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add an error to the error queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the error to add \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{errors_8hpp}{errors.\+hpp}}\item 
+YLang0.\+2/src/errors.\+cpp\end{DoxyCompactItemize}

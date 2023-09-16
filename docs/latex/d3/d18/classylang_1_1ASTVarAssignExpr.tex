@@ -1,0 +1,52 @@
+\hypertarget{classylang_1_1ASTVarAssignExpr}{}\doxysection{ylang\+::ASTVar\+Assign\+Expr Class Reference}
+\label{classylang_1_1ASTVarAssignExpr}\index{ylang::ASTVarAssignExpr@{ylang::ASTVarAssignExpr}}
+
+
+Class used to represent a variable assignment expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}.  
+
+
+
+
+{\ttfamily \#include $<$ast.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::ASTVar\+Assign\+Expr\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::ASTVar\+Assign\+Expr\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarAssignExpr_a7415c36973b10f68147d58b5fcfae003}\label{classylang_1_1ASTVarAssignExpr_a7415c36973b10f68147d58b5fcfae003}} 
+{\bfseries ASTVar\+Assign\+Expr} (\mbox{\hyperlink{structylang_1_1Token}{Token}} name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ assignment)
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarAssignExpr_a1ab9634509bd7f9bc2fdca6f51dec1dd}\label{classylang_1_1ASTVarAssignExpr_a1ab9634509bd7f9bc2fdca6f51dec1dd}} 
+virtual void {\bfseries Accept} (\mbox{\hyperlink{classylang_1_1ExprVisitor}{Expr\+Visitor}} \&visitor) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarAssignExpr_a192e64903b0365ac5a554aa360b76c50}\label{classylang_1_1ASTVarAssignExpr_a192e64903b0365ac5a554aa360b76c50}} 
+virtual void {\bfseries Print} () const override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarAssignExpr_a5d9af49be67770b2effa4ffe3f3e5352}\label{classylang_1_1ASTVarAssignExpr_a5d9af49be67770b2effa4ffe3f3e5352}} 
+virtual Type {\bfseries Get\+Type} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarAssignExpr_a118c8b6db683d0e38f494d74816f4e29}\label{classylang_1_1ASTVarAssignExpr_a118c8b6db683d0e38f494d74816f4e29}} 
+\mbox{\hyperlink{structylang_1_1Token}{Token}} {\bfseries name}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTVarAssignExpr_a0814071cee92229b52e5e978f321af88}\label{classylang_1_1ASTVarAssignExpr_a0814071cee92229b52e5e978f321af88}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries assignment}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to represent a variable assignment expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/ast.\+hpp\item 
+YLang0.\+2/src/ast.\+cpp\end{DoxyCompactItemize}

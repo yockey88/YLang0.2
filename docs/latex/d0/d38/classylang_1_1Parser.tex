@@ -1,0 +1,131 @@
+\hypertarget{classylang_1_1Parser}{}\doxysection{ylang\+::Parser Class Reference}
+\label{classylang_1_1Parser}\index{ylang::Parser@{ylang::Parser}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a47c31739e303415e01fafec6edc9dced}\label{classylang_1_1Parser_a47c31739e303415e01fafec6edc9dced}} 
+{\bfseries Parser} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ErrorHandler}{Error\+Handler}} $>$ err\+\_\+handler, std\+::vector$<$ \mbox{\hyperlink{structylang_1_1Token}{Token}} $>$ lexemes)
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a64db0e5e34d9503d46c978f5f0de75cf}\label{classylang_1_1Parser_a64db0e5e34d9503d46c978f5f0de75cf}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ $>$ {\bfseries Parse} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a136410ca14163a0adfff94981d229782}\label{classylang_1_1Parser_a136410ca14163a0adfff94981d229782}} 
+const bool {\bfseries Parse\+Failed} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_af2f21e0b37c13c8981a63f133593da3a}\label{classylang_1_1Parser_af2f21e0b37c13c8981a63f133593da3a}} 
+\mbox{\hyperlink{classylang_1_1parser__error}{parser\+\_\+error}} {\bfseries Get\+Error} (Error\+Level level, const std\+::string \&msg)
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a1fa18bac3d0ae9e3c255f4f5de53821e}\label{classylang_1_1Parser_a1fa18bac3d0ae9e3c255f4f5de53821e}} 
+\mbox{\hyperlink{structylang_1_1Token}{Token}} {\bfseries Peek} () const
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_ab5fc031041afb2d9fe82d64737c5a67a}\label{classylang_1_1Parser_ab5fc031041afb2d9fe82d64737c5a67a}} 
+\mbox{\hyperlink{structylang_1_1Token}{Token}} {\bfseries Previous} () const
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_ae676d1c3866d4d88cedc6cb8fa0e69bd}\label{classylang_1_1Parser_ae676d1c3866d4d88cedc6cb8fa0e69bd}} 
+\mbox{\hyperlink{structylang_1_1Token}{Token}} {\bfseries Advance} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a8b50ccd08ca35683dbc924dac2b30296}\label{classylang_1_1Parser_a8b50ccd08ca35683dbc924dac2b30296}} 
+\mbox{\hyperlink{structylang_1_1Token}{Token}} {\bfseries Consume} (Type t, const std\+::string \&msg)
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a87b513bdc7d265d107a277f58c4ed935}\label{classylang_1_1Parser_a87b513bdc7d265d107a277f58c4ed935}} 
+bool {\bfseries Is\+At\+End} () const
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a652cc39ae95172f5914fd34f1ba99136}\label{classylang_1_1Parser_a652cc39ae95172f5914fd34f1ba99136}} 
+bool {\bfseries Check} (Type type)
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a1a1af04430c38994e1bb529ac3387590}\label{classylang_1_1Parser_a1a1af04430c38994e1bb529ac3387590}} 
+bool {\bfseries Match} (std\+::vector$<$ Type $>$ types)
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a2f49f6010998df7cb397fa5530f0b24b}\label{classylang_1_1Parser_a2f49f6010998df7cb397fa5530f0b24b}} 
+void {\bfseries Synchronize} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a8854d78351579dde4b1066ad71e0ccee}\label{classylang_1_1Parser_a8854d78351579dde4b1066ad71e0ccee}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTLiteral}{ASTLiteral}} $>$ {\bfseries Create\+Typed\+Literal} (\mbox{\hyperlink{structylang_1_1Token}{Token}} token)
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a9438c6e0b3da0e7615a5651d2c581c05}\label{classylang_1_1Parser_a9438c6e0b3da0e7615a5651d2c581c05}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries Parse\+Decl} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a3b794837402bcf3fa25972bbeb3cf35e}\label{classylang_1_1Parser_a3b794837402bcf3fa25972bbeb3cf35e}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries Parse\+Var\+Decl} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a297f82fe2fb90a48371ef73166fbcd00}\label{classylang_1_1Parser_a297f82fe2fb90a48371ef73166fbcd00}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries Parse\+Stmnt} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a6d5e16cc8bc68d8ec3e5c4f895417013}\label{classylang_1_1Parser_a6d5e16cc8bc68d8ec3e5c4f895417013}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries Parse\+Print\+Stmnt} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a08c739852073a794f09af7d2062aeaa7}\label{classylang_1_1Parser_a08c739852073a794f09af7d2062aeaa7}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries Parse\+Expr\+Stmnt} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a2115d129a0d600eda586c49c22f0c587}\label{classylang_1_1Parser_a2115d129a0d600eda586c49c22f0c587}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries Parse\+Block\+Stmnt} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a513a14da7eaf1334d54c52d1a110c790}\label{classylang_1_1Parser_a513a14da7eaf1334d54c52d1a110c790}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries Parse\+If\+Stmnt} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a2d1dd8ae7f489974d2365a1200fa2c12}\label{classylang_1_1Parser_a2d1dd8ae7f489974d2365a1200fa2c12}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries Parse\+While\+Stmnt} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_ae19e7821aa7002c5a61430cf6a1bc9e4}\label{classylang_1_1Parser_ae19e7821aa7002c5a61430cf6a1bc9e4}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Expr} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_accc65673d768586df4958bfe662d87ea}\label{classylang_1_1Parser_accc65673d768586df4958bfe662d87ea}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Assignment} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_ae5140559cc1151731b5a04780c80e77f}\label{classylang_1_1Parser_ae5140559cc1151731b5a04780c80e77f}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Logical\+Or} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a4d91e0744af29e04c187645bf6fb99c2}\label{classylang_1_1Parser_a4d91e0744af29e04c187645bf6fb99c2}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Logical\+And} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a898b30b7e3a5ac2d9d544a672a8e31c9}\label{classylang_1_1Parser_a898b30b7e3a5ac2d9d544a672a8e31c9}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Equality} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a97c42031b6fbddbacc307265fb58e584}\label{classylang_1_1Parser_a97c42031b6fbddbacc307265fb58e584}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Comparison} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a3f300dd47afb8010b9cae3e8b31e7e3a}\label{classylang_1_1Parser_a3f300dd47afb8010b9cae3e8b31e7e3a}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Term} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_ac463f5c7adfc05491049935142f4dd96}\label{classylang_1_1Parser_ac463f5c7adfc05491049935142f4dd96}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Factor} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a06f2b22bb355ed94525da1175c78c9e7}\label{classylang_1_1Parser_a06f2b22bb355ed94525da1175c78c9e7}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Unary} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a8054f43872be21c20fb39dd4034f5f8b}\label{classylang_1_1Parser_a8054f43872be21c20fb39dd4034f5f8b}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries Parse\+Primary} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a1c3cb01dc30f82e3b1dd3e4a1ea2773e}\label{classylang_1_1Parser_a1c3cb01dc30f82e3b1dd3e4a1ea2773e}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ErrorHandler}{Error\+Handler}} $>$ {\bfseries err\+\_\+handler} = nullptr
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a8ee3f1de5152bd2aa086ed1986d1c5a3}\label{classylang_1_1Parser_a8ee3f1de5152bd2aa086ed1986d1c5a3}} 
+Type {\bfseries var\+\_\+type} = Type\+::\+ERROR\+\_\+\+TOKEN
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a060dc204bad150ed818ba2e78da8dc5e}\label{classylang_1_1Parser_a060dc204bad150ed818ba2e78da8dc5e}} 
+bool {\bfseries in\+\_\+var\+\_\+decl} = false
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a78c124b4a0bf866024935ace92a4786b}\label{classylang_1_1Parser_a78c124b4a0bf866024935ace92a4786b}} 
+uint32\+\_\+t {\bfseries index} = 0
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a1af7a2a6dff8a0ad45d7357ae388f3b7}\label{classylang_1_1Parser_a1af7a2a6dff8a0ad45d7357ae388f3b7}} 
+bool {\bfseries abort\+\_\+parse} = false
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a1363f5f7ae6310e23c27d982d354820a}\label{classylang_1_1Parser_a1363f5f7ae6310e23c27d982d354820a}} 
+std\+::vector$<$ \mbox{\hyperlink{structylang_1_1Token}{Token}} $>$ {\bfseries lexemes} \{\}
+\item 
+\mbox{\Hypertarget{classylang_1_1Parser_a8365816cc807969fd47533e23ab5c6f6}\label{classylang_1_1Parser_a8365816cc807969fd47533e23ab5c6f6}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ $>$ {\bfseries statements} \{\}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/parser.\+hpp\item 
+YLang0.\+2/src/parser.\+cpp\end{DoxyCompactItemize}

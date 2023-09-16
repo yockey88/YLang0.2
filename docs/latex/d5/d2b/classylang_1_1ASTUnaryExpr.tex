@@ -1,0 +1,52 @@
+\hypertarget{classylang_1_1ASTUnaryExpr}{}\doxysection{ylang\+::ASTUnary\+Expr Class Reference}
+\label{classylang_1_1ASTUnaryExpr}\index{ylang::ASTUnaryExpr@{ylang::ASTUnaryExpr}}
+
+
+Class used to represent a unary expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}.  
+
+
+
+
+{\ttfamily \#include $<$ast.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::ASTUnary\+Expr\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::ASTUnary\+Expr\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTUnaryExpr_aabd342a6ef207f7130a4e9d82c644d65}\label{classylang_1_1ASTUnaryExpr_aabd342a6ef207f7130a4e9d82c644d65}} 
+{\bfseries ASTUnary\+Expr} (\mbox{\hyperlink{structylang_1_1Token}{Token}} op, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ expr)
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTUnaryExpr_a3405c55d156c735e018dd74f36092f3d}\label{classylang_1_1ASTUnaryExpr_a3405c55d156c735e018dd74f36092f3d}} 
+virtual void {\bfseries Accept} (\mbox{\hyperlink{classylang_1_1ExprVisitor}{Expr\+Visitor}} \&visitor) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTUnaryExpr_aa3deed8c214accee2aa2fc1245475a28}\label{classylang_1_1ASTUnaryExpr_aa3deed8c214accee2aa2fc1245475a28}} 
+virtual void {\bfseries Print} () const override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTUnaryExpr_a29738230cb6223950fca3ebd8f3875e4}\label{classylang_1_1ASTUnaryExpr_a29738230cb6223950fca3ebd8f3875e4}} 
+virtual Type {\bfseries Get\+Type} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTUnaryExpr_a718a8b47860b20ca1a552c37c6fa724d}\label{classylang_1_1ASTUnaryExpr_a718a8b47860b20ca1a552c37c6fa724d}} 
+\mbox{\hyperlink{structylang_1_1Token}{Token}} {\bfseries op}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTUnaryExpr_afc09b680d59758cab12bf2f50e31c6db}\label{classylang_1_1ASTUnaryExpr_afc09b680d59758cab12bf2f50e31c6db}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries expr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to represent a unary expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/ast.\+hpp\item 
+YLang0.\+2/src/ast.\+cpp\end{DoxyCompactItemize}

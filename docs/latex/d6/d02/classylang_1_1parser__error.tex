@@ -1,0 +1,100 @@
+\hypertarget{classylang_1_1parser__error}{}\doxysection{ylang\+::parser\+\_\+error Class Reference}
+\label{classylang_1_1parser__error}\index{ylang::parser\_error@{ylang::parser\_error}}
+
+
+Class used to throw parser errors with line and column information with help to specify which part of the compiler the error message is coming from.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::parser\+\_\+error\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::parser\+\_\+error\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classylang_1_1parser__error_a1522e6c989ab21cb2f80a22d78c4af98}{parser\+\_\+error}} (const std\+::string \&msg)
+\item 
+\mbox{\hyperlink{classylang_1_1parser__error_a1ed316fa6c9d007cd5b54faacb009e73}{parser\+\_\+error}} (uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\item 
+\mbox{\hyperlink{classylang_1_1parser__error_a3afc449f8addec35b70b259bee69d297}{parser\+\_\+error}} (Error\+Level level, uint32\+\_\+t line, uint32\+\_\+t col, const std\+::string \&msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1parser__error_a316d3aa8c41ba12a81e1d519dffe3e32}\label{classylang_1_1parser__error_a316d3aa8c41ba12a81e1d519dffe3e32}} 
+Error\+Level {\bfseries level} = Error\+Level\+::\+UNDEFINED\+\_\+\+BEHAVIOR
+\item 
+\mbox{\Hypertarget{classylang_1_1parser__error_af039418b581a68fdf3d7ceb11705cfc5}\label{classylang_1_1parser__error_af039418b581a68fdf3d7ceb11705cfc5}} 
+uint32\+\_\+t {\bfseries line} = 0
+\item 
+\mbox{\Hypertarget{classylang_1_1parser__error_a2e142a5f320769e76b3e20de884f614f}\label{classylang_1_1parser__error_a2e142a5f320769e76b3e20de884f614f}} 
+uint32\+\_\+t {\bfseries column} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to throw parser errors with line and column information with help to specify which part of the compiler the error message is coming from. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classylang_1_1parser__error_a1522e6c989ab21cb2f80a22d78c4af98}\label{classylang_1_1parser__error_a1522e6c989ab21cb2f80a22d78c4af98}} 
+\index{ylang::parser\_error@{ylang::parser\_error}!parser\_error@{parser\_error}}
+\index{parser\_error@{parser\_error}!ylang::parser\_error@{ylang::parser\_error}}
+\doxysubsubsection{\texorpdfstring{parser\_error()}{parser\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily ylang\+::parser\+\_\+error\+::parser\+\_\+error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1parser__error_a1ed316fa6c9d007cd5b54faacb009e73}\label{classylang_1_1parser__error_a1ed316fa6c9d007cd5b54faacb009e73}} 
+\index{ylang::parser\_error@{ylang::parser\_error}!parser\_error@{parser\_error}}
+\index{parser\_error@{parser\_error}!ylang::parser\_error@{ylang::parser\_error}}
+\doxysubsubsection{\texorpdfstring{parser\_error()}{parser\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily ylang\+::parser\+\_\+error\+::parser\+\_\+error (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This constructor is used for debugging purposes only and helps determine if the program is behaving as expected 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1parser__error_a3afc449f8addec35b70b259bee69d297}\label{classylang_1_1parser__error_a3afc449f8addec35b70b259bee69d297}} 
+\index{ylang::parser\_error@{ylang::parser\_error}!parser\_error@{parser\_error}}
+\index{parser\_error@{parser\_error}!ylang::parser\_error@{ylang::parser\_error}}
+\doxysubsubsection{\texorpdfstring{parser\_error()}{parser\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily ylang\+::parser\+\_\+error\+::parser\+\_\+error (\begin{DoxyParamCaption}\item[{Error\+Level}]{level,  }\item[{uint32\+\_\+t}]{line,  }\item[{uint32\+\_\+t}]{col,  }\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & the level of the error \\
+\hline
+{\em line} & the line number of the error \\
+\hline
+{\em col} & the column number of the error \\
+\hline
+{\em msg} & the error message \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{errors_8hpp}{errors.\+hpp}}\end{DoxyCompactItemize}

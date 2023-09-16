@@ -1,0 +1,204 @@
+\begin{theindex}
+
+  \item {$\sim$CmndLineArgs}
+    \subitem {ylang::CmndLineArgs}, \hyperpage{28}
+
+  \indexspace
+
+  \item {Advance}
+    \subitem {ylang::Lexer}, \hyperpage{42}
+  \item {ArgHasValue}
+    \subitem {ylang::CmndLineArgs}, \hyperpage{28}
+  \item {ArgPresent}
+    \subitem {ylang::CmndLineArgs}, \hyperpage{28}
+  \item {args}
+    \subitem {ylang::CmndLineArgs}, \hyperpage{29}
+
+  \indexspace
+
+  \item {CmndLineArgs}
+    \subitem {ylang::CmndLineArgs}, \hyperpage{27}
+  \item {compiler\_error}
+    \subitem {ylang::compiler\_error}, \hyperpage{30, 31}
+  \item {Consume}
+    \subitem {ylang::Lexer}, \hyperpage{42}
+
+  \indexspace
+
+  \item {Error}
+    \subitem {ylang::Error}, \hyperpage{32--34}
+
+  \indexspace
+
+  \item {flags}
+    \subitem {ylang::CmndLineArgs}, \hyperpage{29}
+  \item {FlushErrors}
+    \subitem {ylang::ErrorHandler}, \hyperpage{36}
+
+  \indexspace
+
+  \item {GetArgValue}
+    \subitem {ylang::CmndLineArgs}, \hyperpage{28}
+  \item {GetCurrFileName}
+    \subitem {ylang::Util}, \hyperpage{50}
+  \item {GetTokens}
+    \subitem {ylang::Lexer}, \hyperpage{42}
+
+  \indexspace
+
+  \item {HandleComment}
+    \subitem {ylang::Lexer}, \hyperpage{43}
+  \item {HandleLexerError}
+    \subitem {ylang::ErrorHandler}, \hyperpage{36}
+  \item {HandleParserError}
+    \subitem {ylang::ErrorHandler}, \hyperpage{36}
+  \item {HandleRuntimeError}
+    \subitem {ylang::ErrorHandler}, \hyperpage{36}
+  \item {HandleString}
+    \subitem {ylang::Lexer}, \hyperpage{43}
+
+  \indexspace
+
+  \item {InitTokenTypeMaps}
+    \subitem {ylang::Lexer}, \hyperpage{43}
+  \item {interpreter\_error}
+    \subitem {ylang::interpreter\_error}, \hyperpage{39, 40}
+  \item {IsEmpty}
+    \subitem {ylang::ErrorHandler}, \hyperpage{36}
+
+  \indexspace
+
+  \item {keywords}
+    \subitem {ylang::Lexer}, \hyperpage{44}
+
+  \indexspace
+
+  \item {level}
+    \subitem {ylang::Error}, \hyperpage{34}
+  \item {Lex}
+    \subitem {ylang::Lexer}, \hyperpage{43}
+  \item {Lexer}
+    \subitem {ylang::Lexer}, \hyperpage{42}
+  \item {lexer\_error}
+    \subitem {ylang::lexer\_error}, \hyperpage{45, 46}
+
+  \indexspace
+
+  \item {NewLine}
+    \subitem {ylang::Lexer}, \hyperpage{44}
+
+  \indexspace
+
+  \item {operators}
+    \subitem {ylang::Lexer}, \hyperpage{44}
+
+  \indexspace
+
+  \item {parser\_error}
+    \subitem {ylang::parser\_error}, \hyperpage{48, 49}
+  \item {Peek}
+    \subitem {ylang::Lexer}, \hyperpage{44}
+  \item {PeekNext}
+    \subitem {ylang::Lexer}, \hyperpage{44}
+  \item {Print}
+    \subitem {ylang::AST}, \hyperpage{15}
+  \item {PrintToken}
+    \subitem {ylang::Util}, \hyperpage{51}
+  \item {PrintUsage}
+    \subitem {ylang::Util}, \hyperpage{51}
+
+  \indexspace
+
+  \item {ReadSrc}
+    \subitem {ylang::Util}, \hyperpage{51}
+
+  \indexspace
+
+  \item {SubmitError}
+    \subitem {ylang::ErrorHandler}, \hyperpage{36}
+
+  \indexspace
+
+  \item {VisitVarAssignExpr}
+    \subitem {ylang::Interpreter}, \hyperpage{38}
+
+  \indexspace
+
+  \item {ylang}, \hyperpage{11}
+  \item {YLang0.2/include/defines.hpp}, \hyperpage{53}
+  \item {YLang0.2/include/errors.hpp}, \hyperpage{55}
+  \item {YLang0.2/include/lexer.hpp}, \hyperpage{56}
+  \item {YLang0.2/include/util.hpp}, \hyperpage{56}
+  \item {ylang::AST}, \hyperpage{15}
+    \subitem {Print}, \hyperpage{15}
+  \item {ylang::ASTBinaryExpr}, \hyperpage{16}
+  \item {ylang::ASTBlockStmnt}, \hyperpage{16}
+  \item {ylang::ASTExpr}, \hyperpage{17}
+  \item {ylang::ASTExprStmnt}, \hyperpage{17}
+  \item {ylang::ASTGroupingExpr}, \hyperpage{18}
+  \item {ylang::ASTIfStmnt}, \hyperpage{19}
+  \item {ylang::ASTLiteral}, \hyperpage{19}
+  \item {ylang::ASTLogicalExpr}, \hyperpage{20}
+  \item {ylang::ASTNode}, \hyperpage{21}
+  \item {ylang::ASTPrinter}, \hyperpage{21}
+  \item {ylang::ASTPrintStmnt}, \hyperpage{22}
+  \item {ylang::ASTStmnt}, \hyperpage{22}
+  \item {ylang::ASTUnaryExpr}, \hyperpage{23}
+  \item {ylang::ASTVarAssignExpr}, \hyperpage{24}
+  \item {ylang::ASTVarExpr}, \hyperpage{24}
+  \item {ylang::ASTVarStmnt}, \hyperpage{25}
+  \item {ylang::ASTWhileStmnt}, \hyperpage{26}
+  \item {ylang::CmndLineArgs}, \hyperpage{26}
+    \subitem {$\sim$CmndLineArgs}, \hyperpage{28}
+    \subitem {ArgHasValue}, \hyperpage{28}
+    \subitem {ArgPresent}, \hyperpage{28}
+    \subitem {args}, \hyperpage{29}
+    \subitem {CmndLineArgs}, \hyperpage{27}
+    \subitem {flags}, \hyperpage{29}
+    \subitem {GetArgValue}, \hyperpage{28}
+  \item {ylang::compiler\_error}, \hyperpage{30}
+    \subitem {compiler\_error}, \hyperpage{30, 31}
+  \item {ylang::Error}, \hyperpage{31}
+    \subitem {Error}, \hyperpage{32--34}
+    \subitem {level}, \hyperpage{34}
+  \item {ylang::ErrorHandler}, \hyperpage{35}
+    \subitem {FlushErrors}, \hyperpage{36}
+    \subitem {HandleLexerError}, \hyperpage{36}
+    \subitem {HandleParserError}, \hyperpage{36}
+    \subitem {HandleRuntimeError}, \hyperpage{36}
+    \subitem {IsEmpty}, \hyperpage{36}
+    \subitem {SubmitError}, \hyperpage{36}
+  \item {ylang::ExprVisitor}, \hyperpage{37}
+  \item {ylang::Interpreter}, \hyperpage{37}
+    \subitem {VisitVarAssignExpr}, \hyperpage{38}
+  \item {ylang::interpreter\_error}, \hyperpage{39}
+    \subitem {interpreter\_error}, \hyperpage{39, 40}
+  \item {ylang::Lexer}, \hyperpage{40}
+    \subitem {Advance}, \hyperpage{42}
+    \subitem {Consume}, \hyperpage{42}
+    \subitem {GetTokens}, \hyperpage{42}
+    \subitem {HandleComment}, \hyperpage{43}
+    \subitem {HandleString}, \hyperpage{43}
+    \subitem {InitTokenTypeMaps}, \hyperpage{43}
+    \subitem {keywords}, \hyperpage{44}
+    \subitem {Lex}, \hyperpage{43}
+    \subitem {Lexer}, \hyperpage{42}
+    \subitem {NewLine}, \hyperpage{44}
+    \subitem {operators}, \hyperpage{44}
+    \subitem {Peek}, \hyperpage{44}
+    \subitem {PeekNext}, \hyperpage{44}
+  \item {ylang::lexer\_error}, \hyperpage{45}
+    \subitem {lexer\_error}, \hyperpage{45, 46}
+  \item {ylang::Parser}, \hyperpage{47}
+  \item {ylang::parser\_error}, \hyperpage{48}
+    \subitem {parser\_error}, \hyperpage{48, 49}
+  \item {ylang::Token}, \hyperpage{49}
+  \item {ylang::Util}, \hyperpage{50}
+    \subitem {GetCurrFileName}, \hyperpage{50}
+    \subitem {PrintToken}, \hyperpage{51}
+    \subitem {PrintUsage}, \hyperpage{51}
+    \subitem {ReadSrc}, \hyperpage{51}
+  \item {ylang::Variable}, \hyperpage{52}
+  \item {ylang::VM}, \hyperpage{52}
+
+\end{theindex}

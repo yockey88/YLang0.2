@@ -1,0 +1,288 @@
+\hypertarget{namespaceylang}{}\doxysection{ylang Namespace Reference}
+\label{namespaceylang}\index{ylang@{ylang}}
+
+
+contains all the ylang compiler related code  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classylang_1_1ExprVisitor}{Expr\+Visitor}}
+\begin{DoxyCompactList}\small\item\em Abstract class used to visit a node in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTPrinter}{ASTPrinter}}
+\begin{DoxyCompactList}\small\item\em Class used to print the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTNode}{ASTNode}}
+\begin{DoxyCompactList}\small\item\em Abstract class used to represent a node in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1AST}{AST}}
+\begin{DoxyCompactList}\small\item\em Class used to represent the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}}
+\begin{DoxyCompactList}\small\item\em Abstract class used to represent an expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTLiteral}{ASTLiteral}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a literal in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTLogicalExpr}{ASTLogical\+Expr}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a logical expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTUnaryExpr}{ASTUnary\+Expr}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a unary expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTBinaryExpr}{ASTBinary\+Expr}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a binary expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTGroupingExpr}{ASTGrouping\+Expr}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a grouping expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTVarExpr}{ASTVar\+Expr}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a variable expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTVarAssignExpr}{ASTVar\+Assign\+Expr}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a variable assignment expression in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}}
+\begin{DoxyCompactList}\small\item\em Abstract class used to represent a statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTPrintStmnt}{ASTPrint\+Stmnt}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a print statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTExprStmnt}{ASTExpr\+Stmnt}}
+\begin{DoxyCompactList}\small\item\em Class used to represent an expression statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTVarStmnt}{ASTVar\+Stmnt}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a variable statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTBlockStmnt}{ASTBlock\+Stmnt}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a block statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTIfStmnt}{ASTIf\+Stmnt}}
+\begin{DoxyCompactList}\small\item\em Class used to represent an if statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ASTWhileStmnt}{ASTWhile\+Stmnt}}
+\begin{DoxyCompactList}\small\item\em Class used to represent a while statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structylang_1_1Token}{Token}}
+\item 
+class \mbox{\hyperlink{classylang_1_1lexer__error}{lexer\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Class used to throw lexer errors with line and column information with help to specify which part of the compiler the error message is coming from. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1parser__error}{parser\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Class used to throw parser errors with line and column information with help to specify which part of the compiler the error message is coming from. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1interpreter__error}{interpreter\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Class used to throw compiler errors with line and column information with help to specify which part of the compiler the error message is coming from. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1compiler__error}{compiler\+\_\+error}}
+\begin{DoxyCompactList}\small\item\em Class used to throw compiler errors with line and column information with help to specify which part of the compiler the error message is coming from. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structylang_1_1Error}{Error}}
+\begin{DoxyCompactList}\small\item\em Struct used to store errors in the error handler. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1ErrorHandler}{Error\+Handler}}
+\begin{DoxyCompactList}\small\item\em Class used to handle errors. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structylang_1_1Variable}{Variable}}
+\item 
+struct \mbox{\hyperlink{structylang_1_1VM}{VM}}
+\item 
+class \mbox{\hyperlink{classylang_1_1Interpreter}{Interpreter}}
+\item 
+class \mbox{\hyperlink{classylang_1_1Lexer}{Lexer}}
+\begin{DoxyCompactList}\small\item\em used internally by the ylang compiler to perform lexical analysis on the source code \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1Parser}{Parser}}
+\item 
+class \mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}}
+\begin{DoxyCompactList}\small\item\em used to parse the command line arguments \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classylang_1_1Util}{Util}}
+\begin{DoxyCompactList}\small\item\em used to read and validate the source code from a file as well as act as a store-\/all for miscallaneous utility functions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceylang_a06c4930eb507bbe6d1becf2c62aeaf6b}\label{namespaceylang_a06c4930eb507bbe6d1becf2c62aeaf6b}} 
+using {\bfseries Var\+Value} = std\+::variant$<$ int8\+\_\+t, int16\+\_\+t, int32\+\_\+t, int64\+\_\+t, uint8\+\_\+t, uint16\+\_\+t, uint32\+\_\+t, uint64\+\_\+t, float, double, bool, char, std\+::string $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceylang_a114ea2bf19358c54c6f601e53fa8456f}\label{namespaceylang_a114ea2bf19358c54c6f601e53fa8456f}} 
+enum class {\bfseries Type} \{ \newline
+{\bfseries START\+\_\+\+OF\+\_\+\+FILE}
+, {\bfseries KW\+\_\+\+I8}
+, {\bfseries KW\+\_\+\+I16}
+, {\bfseries KW\+\_\+\+I32}
+, \newline
+{\bfseries KW\+\_\+\+I64}
+, {\bfseries KW\+\_\+\+U8}
+, {\bfseries KW\+\_\+\+U16}
+, {\bfseries KW\+\_\+\+U32}
+, \newline
+{\bfseries KW\+\_\+\+U64}
+, {\bfseries KW\+\_\+\+F32}
+, {\bfseries KW\+\_\+\+F64}
+, {\bfseries KW\+\_\+\+BOOL}
+, \newline
+{\bfseries KW\+\_\+\+CHAR}
+, {\bfseries KW\+\_\+\+STRING}
+, {\bfseries KW\+\_\+\+BYTE}
+, {\bfseries KW\+\_\+\+NULL}
+, \newline
+{\bfseries KW\+\_\+\+VOID}
+, {\bfseries KW\+\_\+\+FN}
+, {\bfseries KW\+\_\+\+IF}
+, {\bfseries KW\+\_\+\+ELSE}
+, \newline
+{\bfseries KW\+\_\+\+FOR}
+, {\bfseries KW\+\_\+\+WHILE}
+, {\bfseries KW\+\_\+\+SWITCH}
+, {\bfseries KW\+\_\+\+RETURN}
+, \newline
+{\bfseries KW\+\_\+\+BREAK}
+, {\bfseries KW\+\_\+\+CONTINUE}
+, {\bfseries KW\+\_\+\+TRUE}
+, {\bfseries KW\+\_\+\+FALSE}
+, \newline
+{\bfseries KW\+\_\+\+STRUCT}
+, {\bfseries KW\+\_\+\+CLASS}
+, {\bfseries KW\+\_\+\+OBJECT}
+, {\bfseries KW\+\_\+\+ENUM}
+, \newline
+{\bfseries KW\+\_\+\+UNION}
+, {\bfseries KW\+\_\+\+NAMESPACE}
+, {\bfseries KW\+\_\+\+USING}
+, {\bfseries KW\+\_\+\+IMPORT}
+, \newline
+{\bfseries KW\+\_\+\+EXPORT}
+, {\bfseries KW\+\_\+\+PUBLIC}
+, {\bfseries KW\+\_\+\+PRIVATE}
+, {\bfseries KW\+\_\+\+INCLUDE}
+, \newline
+{\bfseries KW\+\_\+\+PRINT}
+, {\bfseries IDENTIFIER}
+, {\bfseries OP\+\_\+\+ADD}
+, {\bfseries OP\+\_\+\+SUB}
+, \newline
+{\bfseries OP\+\_\+\+MUL}
+, {\bfseries OP\+\_\+\+DIV}
+, {\bfseries OP\+\_\+\+MOD}
+, {\bfseries OP\+\_\+\+OPEN\+\_\+\+PAREN}
+, \newline
+{\bfseries OP\+\_\+\+CLOSE\+\_\+\+PAREN}
+, {\bfseries OP\+\_\+\+OPEN\+\_\+\+BRACE}
+, {\bfseries OP\+\_\+\+CLOSE\+\_\+\+BRACE}
+, {\bfseries OP\+\_\+\+OPEN\+\_\+\+BRACKET}
+, \newline
+{\bfseries OP\+\_\+\+CLOSE\+\_\+\+BRACKET}
+, {\bfseries OP\+\_\+\+SEMICOLON}
+, {\bfseries OP\+\_\+\+COMMA}
+, {\bfseries OP\+\_\+\+DOT}
+, \newline
+{\bfseries OP\+\_\+\+COLON}
+, {\bfseries OP\+\_\+\+DOLLAR}
+, {\bfseries OP\+\_\+\+HASH}
+, {\bfseries OP\+\_\+\+AT}
+, \newline
+{\bfseries OP\+\_\+\+EXCLAMATION}
+, {\bfseries OP\+\_\+\+QUESTION}
+, {\bfseries OP\+\_\+\+AMPERSAND}
+, {\bfseries OP\+\_\+\+ASSIGN}
+, \newline
+{\bfseries OP\+\_\+\+LESS\+\_\+\+THAN}
+, {\bfseries OP\+\_\+\+GREATER\+\_\+\+THAN}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+OR}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+AND}
+, \newline
+{\bfseries OP\+\_\+\+XOR}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+NOT}
+, {\bfseries OP\+\_\+\+ADD\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+SUB\+\_\+\+ASSIGN}
+, \newline
+{\bfseries OP\+\_\+\+MUL\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+DIV\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+MOD\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+EQUALS}
+, \newline
+{\bfseries OP\+\_\+\+NOT\+\_\+\+EQUAL}
+, {\bfseries OP\+\_\+\+LESS\+\_\+\+THAN\+\_\+\+EQUAL}
+, {\bfseries OP\+\_\+\+GREATER\+\_\+\+THAN\+\_\+\+EQUAL}
+, {\bfseries OP\+\_\+\+LOGICAL\+\_\+\+AND}
+, \newline
+{\bfseries OP\+\_\+\+LOGICAL\+\_\+\+OR}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+OR\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+BIT\+\_\+\+AND\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+XOR\+\_\+\+ASSIGN}
+, \newline
+{\bfseries OP\+\_\+\+BIT\+\_\+\+NOT\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+LEFT\+\_\+\+SHIFT}
+, {\bfseries OP\+\_\+\+RIGHT\+\_\+\+SHIFT}
+, {\bfseries OP\+\_\+\+LEFT\+\_\+\+SHIFT\+\_\+\+ASSIGN}
+, \newline
+{\bfseries OP\+\_\+\+RIGHT\+\_\+\+SHIFT\+\_\+\+ASSIGN}
+, {\bfseries OP\+\_\+\+INCREMENT}
+, {\bfseries OP\+\_\+\+DECREMENT}
+, {\bfseries OP\+\_\+\+ARROW}
+, \newline
+{\bfseries OP\+\_\+\+SCOPE}
+, {\bfseries OP\+\_\+\+CAPTURE}
+, {\bfseries LIT\+\_\+\+INT}
+, {\bfseries LIT\+\_\+\+HEX}
+, \newline
+{\bfseries LIT\+\_\+\+FLOAT}
+, {\bfseries LIT\+\_\+\+CHAR}
+, {\bfseries LIT\+\_\+\+STRING}
+, {\bfseries COMMENT}
+, \newline
+{\bfseries ERROR\+\_\+\+TOKEN}
+, {\bfseries END\+\_\+\+OF\+\_\+\+FILE}
+ \}
+\item 
+\mbox{\Hypertarget{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}\label{namespaceylang_a47ec54feba8a6cd87a899f54e9d94316}} 
+enum class {\bfseries Error\+Level} \{ {\bfseries WARNING}
+, {\bfseries FATAL}
+, {\bfseries UNDEFINED\+\_\+\+BEHAVIOR}
+ \}
+\item 
+\mbox{\Hypertarget{namespaceylang_a8a2a750aea1aec84350791fa598cf9d8}\label{namespaceylang_a8a2a750aea1aec84350791fa598cf9d8}} 
+enum class {\bfseries Var\+Type} \+: uint8\+\_\+t \{ \newline
+{\bfseries I8}
+, {\bfseries I16}
+, {\bfseries I32}
+, {\bfseries I64}
+, \newline
+{\bfseries U8}
+, {\bfseries U16}
+, {\bfseries U32}
+, {\bfseries U64}
+, \newline
+{\bfseries F32}
+, {\bfseries F64}
+, {\bfseries BOOL}
+, {\bfseries CHAR}
+, \newline
+{\bfseries STRING}
+, {\bfseries BYTE}
+, {\bfseries NULL\+\_\+}
+, {\bfseries VOID}
+, \newline
+{\bfseries STRUCT}
+, {\bfseries CLASS}
+, {\bfseries OBJECT}
+, {\bfseries ENUM}
+, \newline
+{\bfseries UNION}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceylang_a8ba84751a47f893245ea929618f0c872}\label{namespaceylang_a8ba84751a47f893245ea929618f0c872}} 
+Var\+Value {\bfseries operator+} (const Var\+Value \&lhs, const Var\+Value \&rhs)
+\item 
+\mbox{\Hypertarget{namespaceylang_a5dbd6d66589c4f0d3c6b6556a14ea6b9}\label{namespaceylang_a5dbd6d66589c4f0d3c6b6556a14ea6b9}} 
+Var\+Value {\bfseries operator-\/} (const Var\+Value \&lhs, const Var\+Value \&rhs)
+\item 
+\mbox{\Hypertarget{namespaceylang_a7497df6b52e8c2a699c457e9d341e6c2}\label{namespaceylang_a7497df6b52e8c2a699c457e9d341e6c2}} 
+Var\+Value {\bfseries operator$\ast$} (const Var\+Value \&lhs, const Var\+Value \&rhs)
+\item 
+\mbox{\Hypertarget{namespaceylang_ab864495ff27ce447bda2c360ae3aff3a}\label{namespaceylang_ab864495ff27ce447bda2c360ae3aff3a}} 
+Var\+Value {\bfseries operator/} (const Var\+Value \&lhs, const Var\+Value \&rhs)
+\item 
+\mbox{\Hypertarget{namespaceylang_acdf696e09a350149a59b491d04d6eda4}\label{namespaceylang_acdf696e09a350149a59b491d04d6eda4}} 
+Var\+Value {\bfseries operator\%} (const Var\+Value \&lhs, const Var\+Value \&rhs)
+\item 
+\mbox{\Hypertarget{namespaceylang_ab3f8cb1a10c8d7d7ed9e359a7c593098}\label{namespaceylang_ab3f8cb1a10c8d7d7ed9e359a7c593098}} 
+int {\bfseries Main} (const std\+::string \&src)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceylang_a0d95981f3836d6d6cf1d4bd7fca96424}\label{namespaceylang_a0d95981f3836d6d6cf1d4bd7fca96424}} 
+static const std\+::string {\bfseries YLANG\+\_\+\+VERSION} = \char`\"{}0.\+0.\+2\char`\"{}
+\item 
+\mbox{\Hypertarget{namespaceylang_a4ef0cb7688698afc52921510e4fbb847}\label{namespaceylang_a4ef0cb7688698afc52921510e4fbb847}} 
+static const std\+::string {\bfseries Token\+Type\+Strings} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+contains all the ylang compiler related code 
+
+namespace 

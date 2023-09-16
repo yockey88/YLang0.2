@@ -1,0 +1,46 @@
+\hypertarget{classylang_1_1ASTBlockStmnt}{}\doxysection{ylang\+::ASTBlock\+Stmnt Class Reference}
+\label{classylang_1_1ASTBlockStmnt}\index{ylang::ASTBlockStmnt@{ylang::ASTBlockStmnt}}
+
+
+Class used to represent a block statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}.  
+
+
+
+
+{\ttfamily \#include $<$ast.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::ASTBlock\+Stmnt\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::ASTBlock\+Stmnt\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTBlockStmnt_a05fc1e2aed6ce4df9869e6ec5e58775f}\label{classylang_1_1ASTBlockStmnt_a05fc1e2aed6ce4df9869e6ec5e58775f}} 
+{\bfseries ASTBlock\+Stmnt} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$$>$ statements)
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTBlockStmnt_a4bf6c9659a53756c7b5baf251d8c9068}\label{classylang_1_1ASTBlockStmnt_a4bf6c9659a53756c7b5baf251d8c9068}} 
+virtual void {\bfseries Accept} (\mbox{\hyperlink{classylang_1_1ExprVisitor}{Expr\+Visitor}} \&visitor) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTBlockStmnt_a48804d7203228e8ed08a03ccfaa490ef}\label{classylang_1_1ASTBlockStmnt_a48804d7203228e8ed08a03ccfaa490ef}} 
+virtual void {\bfseries Print} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTBlockStmnt_a3ad41b8c75ce6d21c8a6f41b0601aa7d}\label{classylang_1_1ASTBlockStmnt_a3ad41b8c75ce6d21c8a6f41b0601aa7d}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ $>$ {\bfseries statements}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to represent a block statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/ast.\+hpp\item 
+YLang0.\+2/src/ast.\+cpp\end{DoxyCompactItemize}

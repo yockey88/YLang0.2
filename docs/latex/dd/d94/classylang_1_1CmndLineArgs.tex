@@ -1,0 +1,201 @@
+\hypertarget{classylang_1_1CmndLineArgs}{}\doxysection{ylang\+::Cmnd\+Line\+Args Class Reference}
+\label{classylang_1_1CmndLineArgs}\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+
+
+used to parse the command line arguments  
+
+
+
+
+{\ttfamily \#include $<$util.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classylang_1_1CmndLineArgs_a86cea11b998962449936a40f0a59946e}{Cmnd\+Line\+Args}} (int $\ast$\&argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em parses the command line arguments \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classylang_1_1CmndLineArgs_ab6a0d93240970c6860aa71098d47e5c2}{Cmnd\+Line\+Args}} ()=delete
+\item 
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_a0e2ec2c36846d3510161322cc57bb959}\label{classylang_1_1CmndLineArgs_a0e2ec2c36846d3510161322cc57bb959}} 
+{\bfseries Cmnd\+Line\+Args} (const \mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}} \&)=delete
+\item 
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_a2674665613a10d9b7b1ee2b40bf8fafd}\label{classylang_1_1CmndLineArgs_a2674665613a10d9b7b1ee2b40bf8fafd}} 
+{\bfseries Cmnd\+Line\+Args} (\mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}} \&\&)=delete
+\item 
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_afd7c85255d017f2fa61b9f93c1ba67f4}\label{classylang_1_1CmndLineArgs_afd7c85255d017f2fa61b9f93c1ba67f4}} 
+\mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}} \& {\bfseries operator=} (const \mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}} \&)=delete
+\item 
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_ae754a6c0b81a6cc93bf9a5b7fe4c6d1f}\label{classylang_1_1CmndLineArgs_ae754a6c0b81a6cc93bf9a5b7fe4c6d1f}} 
+\mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}} \& {\bfseries operator=} (\mbox{\hyperlink{classylang_1_1CmndLineArgs}{Cmnd\+Line\+Args}} \&\&)=delete
+\item 
+\mbox{\hyperlink{classylang_1_1CmndLineArgs_ae9a13ba586657825e80c3e568671460d}{$\sim$\+Cmnd\+Line\+Args}} ()
+\begin{DoxyCompactList}\small\item\em destructor (defualt) \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{classylang_1_1CmndLineArgs_a0c23bc9a4b88ea9f57b5201ede62ab10}{Arg\+Present}} (char flag) const
+\item 
+const bool \mbox{\hyperlink{classylang_1_1CmndLineArgs_ab17c50ee22b3970db7b23cf4e5b9f073}{Arg\+Has\+Value}} (char flag) const
+\item 
+const std\+::string \mbox{\hyperlink{classylang_1_1CmndLineArgs_a86eb77802032db66f4f146a5a21bdaab}{Get\+Arg\+Value}} (char flag) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_a8317df24442935cf0580bcf7502a7826}\label{classylang_1_1CmndLineArgs_a8317df24442935cf0580bcf7502a7826}} 
+char {\bfseries Get\+Flag\+From\+String} (const std\+::string \&flag) const
+\item 
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_acf45c9300ad84e4b96aa2b8df8386bc5}\label{classylang_1_1CmndLineArgs_acf45c9300ad84e4b96aa2b8df8386bc5}} 
+const bool {\bfseries Flag\+Requires\+Value} (char flag) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ char, std\+::optional$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classylang_1_1CmndLineArgs_a246fe82504abe7d0b394f8606d88dede}{args}} \{\}
+\begin{DoxyCompactList}\small\item\em list of all the command line arguments \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classylang_1_1CmndLineArgs_acd67006fb3495d062637e3edeb32a6db}{flags}}
+\begin{DoxyCompactList}\small\item\em list of all the flags \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_a9c2751ecdc9d2563d06622f8f100ef88}\label{classylang_1_1CmndLineArgs_a9c2751ecdc9d2563d06622f8f100ef88}} 
+class {\bfseries Util}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+used to parse the command line arguments 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_a86cea11b998962449936a40f0a59946e}\label{classylang_1_1CmndLineArgs_a86cea11b998962449936a40f0a59946e}} 
+\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}!CmndLineArgs@{CmndLineArgs}}
+\index{CmndLineArgs@{CmndLineArgs}!ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+\doxysubsubsection{\texorpdfstring{CmndLineArgs()}{CmndLineArgs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ylang\+::\+Cmnd\+Line\+Args\+::\+Cmnd\+Line\+Args (\begin{DoxyParamCaption}\item[{int $\ast$\&}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+parses the command line arguments 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of command line arguments \\
+\hline
+{\em argv} & list of command line arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_ab6a0d93240970c6860aa71098d47e5c2}\label{classylang_1_1CmndLineArgs_ab6a0d93240970c6860aa71098d47e5c2}} 
+\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}!CmndLineArgs@{CmndLineArgs}}
+\index{CmndLineArgs@{CmndLineArgs}!ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+\doxysubsubsection{\texorpdfstring{CmndLineArgs()}{CmndLineArgs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ylang\+::\+Cmnd\+Line\+Args\+::\+Cmnd\+Line\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\begin{DoxyNote}{Note}
+we delete these to prevent copying and moving and ensure we only have one instance of our arugments and control data ~\newline
+ 
+\end{DoxyNote}
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_ae9a13ba586657825e80c3e568671460d}\label{classylang_1_1CmndLineArgs_ae9a13ba586657825e80c3e568671460d}} 
+\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}!````~CmndLineArgs@{$\sim$CmndLineArgs}}
+\index{````~CmndLineArgs@{$\sim$CmndLineArgs}!ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+\doxysubsubsection{\texorpdfstring{$\sim$CmndLineArgs()}{~CmndLineArgs()}}
+{\footnotesize\ttfamily ylang\+::\+Cmnd\+Line\+Args\+::$\sim$\+Cmnd\+Line\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+destructor (defualt) 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_ab17c50ee22b3970db7b23cf4e5b9f073}\label{classylang_1_1CmndLineArgs_ab17c50ee22b3970db7b23cf4e5b9f073}} 
+\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}!ArgHasValue@{ArgHasValue}}
+\index{ArgHasValue@{ArgHasValue}!ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+\doxysubsubsection{\texorpdfstring{ArgHasValue()}{ArgHasValue()}}
+{\footnotesize\ttfamily const bool ylang\+::\+Cmnd\+Line\+Args\+::\+Arg\+Has\+Value (\begin{DoxyParamCaption}\item[{char}]{flag }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & flag of the command line argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \+: true if the command line argument has a value, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_a0c23bc9a4b88ea9f57b5201ede62ab10}\label{classylang_1_1CmndLineArgs_a0c23bc9a4b88ea9f57b5201ede62ab10}} 
+\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}!ArgPresent@{ArgPresent}}
+\index{ArgPresent@{ArgPresent}!ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+\doxysubsubsection{\texorpdfstring{ArgPresent()}{ArgPresent()}}
+{\footnotesize\ttfamily const bool ylang\+::\+Cmnd\+Line\+Args\+::\+Arg\+Present (\begin{DoxyParamCaption}\item[{char}]{flag }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & Checks if flag is present in the command line arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \+: true if the command line argument is present, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_a86eb77802032db66f4f146a5a21bdaab}\label{classylang_1_1CmndLineArgs_a86eb77802032db66f4f146a5a21bdaab}} 
+\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}!GetArgValue@{GetArgValue}}
+\index{GetArgValue@{GetArgValue}!ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+\doxysubsubsection{\texorpdfstring{GetArgValue()}{GetArgValue()}}
+{\footnotesize\ttfamily const std\+::string ylang\+::\+Cmnd\+Line\+Args\+::\+Get\+Arg\+Value (\begin{DoxyParamCaption}\item[{char}]{flag }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & flag of the command line argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string value of the command line argument 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em runtime} & error if the command line argument is not present \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_a246fe82504abe7d0b394f8606d88dede}\label{classylang_1_1CmndLineArgs_a246fe82504abe7d0b394f8606d88dede}} 
+\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}!args@{args}}
+\index{args@{args}!ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily std\+::map$<$char , std\+::optional$<$std\+::string$>$ $>$ ylang\+::\+Cmnd\+Line\+Args\+::args \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+list of all the command line arguments 
+
+\mbox{\Hypertarget{classylang_1_1CmndLineArgs_acd67006fb3495d062637e3edeb32a6db}\label{classylang_1_1CmndLineArgs_acd67006fb3495d062637e3edeb32a6db}} 
+\index{ylang::CmndLineArgs@{ylang::CmndLineArgs}!flags@{flags}}
+\index{flags@{flags}!ylang::CmndLineArgs@{ylang::CmndLineArgs}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ ylang\+::\+Cmnd\+Line\+Args\+::flags\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/h"{}} , \textcolor{stringliteral}{"{} -\/-\/help"{}} ,      }
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/v"{}} , \textcolor{stringliteral}{"{} -\/-\/version"{}} ,      }
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/d"{}} , \textcolor{stringliteral}{"{} -\/-\/debug"{}} ,          }
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/D"{}} , \textcolor{stringliteral}{"{} -\/-\/dev"{}} ,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/o"{}} , }
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/t"{}} , \textcolor{stringliteral}{"{}-\/-\/time"{}} ,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/l"{}} ,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/a"{}} , }
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/S"{}} , \textcolor{stringliteral}{"{}-\/-\/asm-\/only"{}} ,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}-\/O"{}} , \textcolor{stringliteral}{"{}-\/-\/optimize"{}} ,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+list of all the flags 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/\mbox{\hyperlink{util_8hpp}{util.\+hpp}}\item 
+YLang0.\+2/src/util.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,155 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Todo List}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Namespace Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Namespace List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Hierarchical Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class Hierarchy}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Class List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}File Index}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}File List}{9}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Namespace Documentation}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}ylang Namespace Reference}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{13}{subsection.6.1.1}%
+\contentsline {chapter}{\numberline {7}Class Documentation}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::AST Class Reference}{15}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{15}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Member Function Documentation}{15}{subsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.1}Print()}{15}{subsubsection.7.1.2.1}%
+\contentsline {section}{\numberline {7.2}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTBinary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{16}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{16}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTBlock\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stmnt Class Reference}{16}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{17}{subsection.7.3.1}%
+\contentsline {section}{\numberline {7.4}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTExpr Class Reference}{17}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{17}{subsection.7.4.1}%
+\contentsline {section}{\numberline {7.5}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTExpr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stmnt Class Reference}{17}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Detailed Description}{18}{subsection.7.5.1}%
+\contentsline {section}{\numberline {7.6}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTGrouping\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{18}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{18}{subsection.7.6.1}%
+\contentsline {section}{\numberline {7.7}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTIf\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stmnt Class Reference}{19}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Detailed Description}{19}{subsection.7.7.1}%
+\contentsline {section}{\numberline {7.8}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTLiteral Class Reference}{19}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Detailed Description}{20}{subsection.7.8.1}%
+\contentsline {section}{\numberline {7.9}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTLogical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{20}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Detailed Description}{20}{subsection.7.9.1}%
+\contentsline {section}{\numberline {7.10}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTNode Class Reference}{21}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Detailed Description}{21}{subsection.7.10.1}%
+\contentsline {section}{\numberline {7.11}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTPrinter Class Reference}{21}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Detailed Description}{22}{subsection.7.11.1}%
+\contentsline {section}{\numberline {7.12}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTPrint\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stmnt Class Reference}{22}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Detailed Description}{22}{subsection.7.12.1}%
+\contentsline {section}{\numberline {7.13}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTStmnt Class Reference}{22}{section.7.13}%
+\contentsline {subsection}{\numberline {7.13.1}Detailed Description}{23}{subsection.7.13.1}%
+\contentsline {section}{\numberline {7.14}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTUnary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{23}{section.7.14}%
+\contentsline {subsection}{\numberline {7.14.1}Detailed Description}{23}{subsection.7.14.1}%
+\contentsline {section}{\numberline {7.15}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTVar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Assign\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{24}{section.7.15}%
+\contentsline {subsection}{\numberline {7.15.1}Detailed Description}{24}{subsection.7.15.1}%
+\contentsline {section}{\numberline {7.16}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTVar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{24}{section.7.16}%
+\contentsline {subsection}{\numberline {7.16.1}Detailed Description}{25}{subsection.7.16.1}%
+\contentsline {section}{\numberline {7.17}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTVar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stmnt Class Reference}{25}{section.7.17}%
+\contentsline {subsection}{\numberline {7.17.1}Detailed Description}{25}{subsection.7.17.1}%
+\contentsline {section}{\numberline {7.18}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ASTWhile\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stmnt Class Reference}{26}{section.7.18}%
+\contentsline {subsection}{\numberline {7.18.1}Detailed Description}{26}{subsection.7.18.1}%
+\contentsline {section}{\numberline {7.19}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Cmnd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Line\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Args Class Reference}{26}{section.7.19}%
+\contentsline {subsection}{\numberline {7.19.1}Detailed Description}{27}{subsection.7.19.1}%
+\contentsline {subsection}{\numberline {7.19.2}Constructor \& Destructor Documentation}{27}{subsection.7.19.2}%
+\contentsline {subsubsection}{\numberline {7.19.2.1}CmndLineArgs()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{27}{subsubsection.7.19.2.1}%
+\contentsline {subsubsection}{\numberline {7.19.2.2}CmndLineArgs()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{27}{subsubsection.7.19.2.2}%
+\contentsline {subsubsection}{\numberline {7.19.2.3}$\sim $CmndLineArgs()}{28}{subsubsection.7.19.2.3}%
+\contentsline {subsection}{\numberline {7.19.3}Member Function Documentation}{28}{subsection.7.19.3}%
+\contentsline {subsubsection}{\numberline {7.19.3.1}ArgHasValue()}{28}{subsubsection.7.19.3.1}%
+\contentsline {subsubsection}{\numberline {7.19.3.2}ArgPresent()}{28}{subsubsection.7.19.3.2}%
+\contentsline {subsubsection}{\numberline {7.19.3.3}GetArgValue()}{29}{subsubsection.7.19.3.3}%
+\contentsline {subsection}{\numberline {7.19.4}Member Data Documentation}{29}{subsection.7.19.4}%
+\contentsline {subsubsection}{\numberline {7.19.4.1}args}{29}{subsubsection.7.19.4.1}%
+\contentsline {subsubsection}{\numberline {7.19.4.2}flags}{29}{subsubsection.7.19.4.2}%
+\contentsline {section}{\numberline {7.20}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::compiler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}error Class Reference}{30}{section.7.20}%
+\contentsline {subsection}{\numberline {7.20.1}Detailed Description}{30}{subsection.7.20.1}%
+\contentsline {subsection}{\numberline {7.20.2}Constructor \& Destructor Documentation}{30}{subsection.7.20.2}%
+\contentsline {subsubsection}{\numberline {7.20.2.1}compiler\_error()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{30}{subsubsection.7.20.2.1}%
+\contentsline {subsubsection}{\numberline {7.20.2.2}compiler\_error()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{31}{subsubsection.7.20.2.2}%
+\contentsline {subsubsection}{\numberline {7.20.2.3}compiler\_error()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{31}{subsubsection.7.20.2.3}%
+\contentsline {section}{\numberline {7.21}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Error Struct Reference}{31}{section.7.21}%
+\contentsline {subsection}{\numberline {7.21.1}Detailed Description}{32}{subsection.7.21.1}%
+\contentsline {subsection}{\numberline {7.21.2}Constructor \& Destructor Documentation}{32}{subsection.7.21.2}%
+\contentsline {subsubsection}{\numberline {7.21.2.1}Error()\hspace {0.1cm}{\footnotesize \ttfamily [1/8]}}{32}{subsubsection.7.21.2.1}%
+\contentsline {subsubsection}{\numberline {7.21.2.2}Error()\hspace {0.1cm}{\footnotesize \ttfamily [2/8]}}{32}{subsubsection.7.21.2.2}%
+\contentsline {subsubsection}{\numberline {7.21.2.3}Error()\hspace {0.1cm}{\footnotesize \ttfamily [3/8]}}{33}{subsubsection.7.21.2.3}%
+\contentsline {subsubsection}{\numberline {7.21.2.4}Error()\hspace {0.1cm}{\footnotesize \ttfamily [4/8]}}{33}{subsubsection.7.21.2.4}%
+\contentsline {subsubsection}{\numberline {7.21.2.5}Error()\hspace {0.1cm}{\footnotesize \ttfamily [5/8]}}{33}{subsubsection.7.21.2.5}%
+\contentsline {subsubsection}{\numberline {7.21.2.6}Error()\hspace {0.1cm}{\footnotesize \ttfamily [6/8]}}{34}{subsubsection.7.21.2.6}%
+\contentsline {subsubsection}{\numberline {7.21.2.7}Error()\hspace {0.1cm}{\footnotesize \ttfamily [7/8]}}{34}{subsubsection.7.21.2.7}%
+\contentsline {subsubsection}{\numberline {7.21.2.8}Error()\hspace {0.1cm}{\footnotesize \ttfamily [8/8]}}{34}{subsubsection.7.21.2.8}%
+\contentsline {subsection}{\numberline {7.21.3}Member Data Documentation}{34}{subsection.7.21.3}%
+\contentsline {subsubsection}{\numberline {7.21.3.1}level}{34}{subsubsection.7.21.3.1}%
+\contentsline {section}{\numberline {7.22}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Error\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Class Reference}{35}{section.7.22}%
+\contentsline {subsection}{\numberline {7.22.1}Detailed Description}{35}{subsection.7.22.1}%
+\contentsline {subsection}{\numberline {7.22.2}Member Function Documentation}{36}{subsection.7.22.2}%
+\contentsline {subsubsection}{\numberline {7.22.2.1}FlushErrors()}{36}{subsubsection.7.22.2.1}%
+\contentsline {subsubsection}{\numberline {7.22.2.2}HandleLexerError()}{36}{subsubsection.7.22.2.2}%
+\contentsline {subsubsection}{\numberline {7.22.2.3}HandleParserError()}{36}{subsubsection.7.22.2.3}%
+\contentsline {subsubsection}{\numberline {7.22.2.4}HandleRuntimeError()}{36}{subsubsection.7.22.2.4}%
+\contentsline {subsubsection}{\numberline {7.22.2.5}IsEmpty()}{36}{subsubsection.7.22.2.5}%
+\contentsline {subsubsection}{\numberline {7.22.2.6}SubmitError()}{36}{subsubsection.7.22.2.6}%
+\contentsline {section}{\numberline {7.23}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Expr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Visitor Class Reference}{37}{section.7.23}%
+\contentsline {subsection}{\numberline {7.23.1}Detailed Description}{37}{subsection.7.23.1}%
+\contentsline {section}{\numberline {7.24}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Interpreter Class Reference}{37}{section.7.24}%
+\contentsline {subsection}{\numberline {7.24.1}Member Function Documentation}{38}{subsection.7.24.1}%
+\contentsline {subsubsection}{\numberline {7.24.1.1}VisitVarAssignExpr()}{38}{subsubsection.7.24.1.1}%
+\contentsline {section}{\numberline {7.25}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::interpreter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}error Class Reference}{39}{section.7.25}%
+\contentsline {subsection}{\numberline {7.25.1}Detailed Description}{39}{subsection.7.25.1}%
+\contentsline {subsection}{\numberline {7.25.2}Constructor \& Destructor Documentation}{39}{subsection.7.25.2}%
+\contentsline {subsubsection}{\numberline {7.25.2.1}interpreter\_error()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{39}{subsubsection.7.25.2.1}%
+\contentsline {subsubsection}{\numberline {7.25.2.2}interpreter\_error()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{40}{subsubsection.7.25.2.2}%
+\contentsline {subsubsection}{\numberline {7.25.2.3}interpreter\_error()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{40}{subsubsection.7.25.2.3}%
+\contentsline {section}{\numberline {7.26}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Lexer Class Reference}{40}{section.7.26}%
+\contentsline {subsection}{\numberline {7.26.1}Detailed Description}{42}{subsection.7.26.1}%
+\contentsline {subsection}{\numberline {7.26.2}Constructor \& Destructor Documentation}{42}{subsection.7.26.2}%
+\contentsline {subsubsection}{\numberline {7.26.2.1}Lexer()}{42}{subsubsection.7.26.2.1}%
+\contentsline {subsection}{\numberline {7.26.3}Member Function Documentation}{42}{subsection.7.26.3}%
+\contentsline {subsubsection}{\numberline {7.26.3.1}Advance()}{42}{subsubsection.7.26.3.1}%
+\contentsline {subsubsection}{\numberline {7.26.3.2}Consume()}{42}{subsubsection.7.26.3.2}%
+\contentsline {subsubsection}{\numberline {7.26.3.3}GetTokens()}{43}{subsubsection.7.26.3.3}%
+\contentsline {subsubsection}{\numberline {7.26.3.4}HandleComment()}{43}{subsubsection.7.26.3.4}%
+\contentsline {subsubsection}{\numberline {7.26.3.5}HandleString()}{43}{subsubsection.7.26.3.5}%
+\contentsline {subsubsection}{\numberline {7.26.3.6}InitTokenTypeMaps()}{43}{subsubsection.7.26.3.6}%
+\contentsline {subsubsection}{\numberline {7.26.3.7}Lex()}{43}{subsubsection.7.26.3.7}%
+\contentsline {subsubsection}{\numberline {7.26.3.8}NewLine()}{44}{subsubsection.7.26.3.8}%
+\contentsline {subsubsection}{\numberline {7.26.3.9}Peek()}{44}{subsubsection.7.26.3.9}%
+\contentsline {subsubsection}{\numberline {7.26.3.10}PeekNext()}{44}{subsubsection.7.26.3.10}%
+\contentsline {subsection}{\numberline {7.26.4}Member Data Documentation}{44}{subsection.7.26.4}%
+\contentsline {subsubsection}{\numberline {7.26.4.1}keywords}{44}{subsubsection.7.26.4.1}%
+\contentsline {subsubsection}{\numberline {7.26.4.2}operators}{45}{subsubsection.7.26.4.2}%
+\contentsline {section}{\numberline {7.27}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::lexer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}error Class Reference}{45}{section.7.27}%
+\contentsline {subsection}{\numberline {7.27.1}Detailed Description}{45}{subsection.7.27.1}%
+\contentsline {subsection}{\numberline {7.27.2}Constructor \& Destructor Documentation}{45}{subsection.7.27.2}%
+\contentsline {subsubsection}{\numberline {7.27.2.1}lexer\_error()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{45}{subsubsection.7.27.2.1}%
+\contentsline {subsubsection}{\numberline {7.27.2.2}lexer\_error()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{46}{subsubsection.7.27.2.2}%
+\contentsline {subsubsection}{\numberline {7.27.2.3}lexer\_error()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{46}{subsubsection.7.27.2.3}%
+\contentsline {section}{\numberline {7.28}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Parser Class Reference}{47}{section.7.28}%
+\contentsline {section}{\numberline {7.29}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::parser\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}error Class Reference}{48}{section.7.29}%
+\contentsline {subsection}{\numberline {7.29.1}Detailed Description}{48}{subsection.7.29.1}%
+\contentsline {subsection}{\numberline {7.29.2}Constructor \& Destructor Documentation}{48}{subsection.7.29.2}%
+\contentsline {subsubsection}{\numberline {7.29.2.1}parser\_error()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{48}{subsubsection.7.29.2.1}%
+\contentsline {subsubsection}{\numberline {7.29.2.2}parser\_error()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{49}{subsubsection.7.29.2.2}%
+\contentsline {subsubsection}{\numberline {7.29.2.3}parser\_error()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{49}{subsubsection.7.29.2.3}%
+\contentsline {section}{\numberline {7.30}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Token Struct Reference}{49}{section.7.30}%
+\contentsline {subsection}{\numberline {7.30.1}Detailed Description}{50}{subsection.7.30.1}%
+\contentsline {section}{\numberline {7.31}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Util Class Reference}{50}{section.7.31}%
+\contentsline {subsection}{\numberline {7.31.1}Detailed Description}{50}{subsection.7.31.1}%
+\contentsline {subsection}{\numberline {7.31.2}Member Function Documentation}{50}{subsection.7.31.2}%
+\contentsline {subsubsection}{\numberline {7.31.2.1}GetCurrFileName()}{51}{subsubsection.7.31.2.1}%
+\contentsline {subsubsection}{\numberline {7.31.2.2}PrintToken()}{51}{subsubsection.7.31.2.2}%
+\contentsline {subsubsection}{\numberline {7.31.2.3}PrintUsage()}{51}{subsubsection.7.31.2.3}%
+\contentsline {subsubsection}{\numberline {7.31.2.4}ReadSrc()}{51}{subsubsection.7.31.2.4}%
+\contentsline {section}{\numberline {7.32}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Variable Struct Reference}{52}{section.7.32}%
+\contentsline {section}{\numberline {7.33}ylang\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::VM Struct Reference}{52}{section.7.33}%
+\contentsline {chapter}{\numberline {8}File Documentation}{53}{chapter.8}%
+\contentsline {section}{\numberline {8.1}YLang0.2/include/defines.hpp File Reference}{53}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Detailed Description}{54}{subsection.8.1.1}%
+\contentsline {section}{\numberline {8.2}YLang0.2/include/errors.hpp File Reference}{55}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Detailed Description}{55}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}YLang0.2/include/lexer.hpp File Reference}{56}{section.8.3}%
+\contentsline {section}{\numberline {8.4}YLang0.2/include/util.hpp File Reference}{56}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Detailed Description}{56}{subsection.8.4.1}%
+\contentsline {chapter}{Index}{57}{section*.82}%

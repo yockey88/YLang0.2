@@ -1,0 +1,52 @@
+\hypertarget{classylang_1_1ASTIfStmnt}{}\doxysection{ylang\+::ASTIf\+Stmnt Class Reference}
+\label{classylang_1_1ASTIfStmnt}\index{ylang::ASTIfStmnt@{ylang::ASTIfStmnt}}
+
+
+Class used to represent an if statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}.  
+
+
+
+
+{\ttfamily \#include $<$ast.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::ASTIf\+Stmnt\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::ASTIf\+Stmnt\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTIfStmnt_ad29a45ba92a1ea135be65871794b24ff}\label{classylang_1_1ASTIfStmnt_ad29a45ba92a1ea135be65871794b24ff}} 
+{\bfseries ASTIf\+Stmnt} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ condition, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ then\+\_\+branch, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ else\+\_\+branch)
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTIfStmnt_a481184305dfb436be917f99620849e55}\label{classylang_1_1ASTIfStmnt_a481184305dfb436be917f99620849e55}} 
+virtual void {\bfseries Accept} (\mbox{\hyperlink{classylang_1_1ExprVisitor}{Expr\+Visitor}} \&visitor) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTIfStmnt_a9bf1609f2b177344a62a447e229345b4}\label{classylang_1_1ASTIfStmnt_a9bf1609f2b177344a62a447e229345b4}} 
+virtual void {\bfseries Print} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTIfStmnt_a9250a8a9168a93355895158ea50ef506}\label{classylang_1_1ASTIfStmnt_a9250a8a9168a93355895158ea50ef506}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTExpr}{ASTExpr}} $>$ {\bfseries condition}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTIfStmnt_aa7ab7be4da23778efe2d007017017784}\label{classylang_1_1ASTIfStmnt_aa7ab7be4da23778efe2d007017017784}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries then\+\_\+branch}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTIfStmnt_a0d6e0e930f7b2d3054be9d60e2202db1}\label{classylang_1_1ASTIfStmnt_a0d6e0e930f7b2d3054be9d60e2202db1}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classylang_1_1ASTStmnt}{ASTStmnt}} $>$ {\bfseries else\+\_\+branch}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to represent an if statement in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/ast.\+hpp\item 
+YLang0.\+2/src/ast.\+cpp\end{DoxyCompactItemize}

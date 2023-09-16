@@ -1,0 +1,70 @@
+\hypertarget{classylang_1_1ASTPrinter}{}\doxysection{ylang\+::ASTPrinter Class Reference}
+\label{classylang_1_1ASTPrinter}\index{ylang::ASTPrinter@{ylang::ASTPrinter}}
+
+
+Class used to print the \mbox{\hyperlink{classylang_1_1AST}{AST}}.  
+
+
+
+
+{\ttfamily \#include $<$ast.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::ASTPrinter\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::ASTPrinter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_a88a3fada7d17ad9581bfc1feae9ac6bf}\label{classylang_1_1ASTPrinter_a88a3fada7d17ad9581bfc1feae9ac6bf}} 
+virtual void {\bfseries Visit\+Literal\+Expr} (\mbox{\hyperlink{classylang_1_1ASTLiteral}{ASTLiteral}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_ab586a026cab6471721a362c38ea2d75d}\label{classylang_1_1ASTPrinter_ab586a026cab6471721a362c38ea2d75d}} 
+virtual void {\bfseries Visit\+Logical\+Expr} (\mbox{\hyperlink{classylang_1_1ASTLogicalExpr}{ASTLogical\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_a61ae35229a5bc5c84c898246e5a0415a}\label{classylang_1_1ASTPrinter_a61ae35229a5bc5c84c898246e5a0415a}} 
+virtual void {\bfseries Visit\+Unary\+Expr} (\mbox{\hyperlink{classylang_1_1ASTUnaryExpr}{ASTUnary\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_a3ea30bca5faec1e169d80f6b8e631db1}\label{classylang_1_1ASTPrinter_a3ea30bca5faec1e169d80f6b8e631db1}} 
+virtual void {\bfseries Visit\+Binary\+Expr} (\mbox{\hyperlink{classylang_1_1ASTBinaryExpr}{ASTBinary\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_afd7d354fba1026d1ad992d9edb0e6f52}\label{classylang_1_1ASTPrinter_afd7d354fba1026d1ad992d9edb0e6f52}} 
+virtual void {\bfseries Visit\+Grouping\+Expr} (\mbox{\hyperlink{classylang_1_1ASTGroupingExpr}{ASTGrouping\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_a84f8bb630739b032f065ed92128dd6d0}\label{classylang_1_1ASTPrinter_a84f8bb630739b032f065ed92128dd6d0}} 
+virtual void {\bfseries Visit\+Var\+Expr} (\mbox{\hyperlink{classylang_1_1ASTVarExpr}{ASTVar\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_aa4f078bea927d1664f861d3670f9acf0}\label{classylang_1_1ASTPrinter_aa4f078bea927d1664f861d3670f9acf0}} 
+virtual void {\bfseries Visit\+Var\+Assign\+Expr} (\mbox{\hyperlink{classylang_1_1ASTVarAssignExpr}{ASTVar\+Assign\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_aded3f7e7895c6748b188429bb72daac0}\label{classylang_1_1ASTPrinter_aded3f7e7895c6748b188429bb72daac0}} 
+virtual void {\bfseries Visit\+Print\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTPrintStmnt}{ASTPrint\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_ac5cf4fe011241bec999f8833b75eadf0}\label{classylang_1_1ASTPrinter_ac5cf4fe011241bec999f8833b75eadf0}} 
+virtual void {\bfseries Visit\+Expr\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTExprStmnt}{ASTExpr\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_a871487617f8a9b41b3339615c8e00038}\label{classylang_1_1ASTPrinter_a871487617f8a9b41b3339615c8e00038}} 
+virtual void {\bfseries Visit\+Var\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTVarStmnt}{ASTVar\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_a7c0929e6fc152446bec2cb4b60f2d503}\label{classylang_1_1ASTPrinter_a7c0929e6fc152446bec2cb4b60f2d503}} 
+virtual void {\bfseries Visit\+Block\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTBlockStmnt}{ASTBlock\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_aead64b461ed1e547054d3bc01b7c2c15}\label{classylang_1_1ASTPrinter_aead64b461ed1e547054d3bc01b7c2c15}} 
+virtual void {\bfseries Visit\+If\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTIfStmnt}{ASTIf\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1ASTPrinter_acdf157baa03ad13883d8a491b4a3b51d}\label{classylang_1_1ASTPrinter_acdf157baa03ad13883d8a491b4a3b51d}} 
+virtual void {\bfseries Visit\+While\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTWhileStmnt}{ASTWhile\+Stmnt}} \&stmnt) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to print the \mbox{\hyperlink{classylang_1_1AST}{AST}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/ast.\+hpp\item 
+YLang0.\+2/src/ast.\+cpp\end{DoxyCompactItemize}

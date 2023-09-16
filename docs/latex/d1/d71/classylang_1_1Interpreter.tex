@@ -1,0 +1,96 @@
+\hypertarget{classylang_1_1Interpreter}{}\doxysection{ylang\+::Interpreter Class Reference}
+\label{classylang_1_1Interpreter}\index{ylang::Interpreter@{ylang::Interpreter}}
+
+
+Inheritance diagram for ylang\+::Interpreter\+:
+% FIG 0
+
+
+Collaboration diagram for ylang\+::Interpreter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_af8077f23bedf49508239a14b3e092b6e}\label{classylang_1_1Interpreter_af8077f23bedf49508239a14b3e092b6e}} 
+virtual void {\bfseries Visit\+Literal\+Expr} (\mbox{\hyperlink{classylang_1_1ASTLiteral}{ASTLiteral}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_a0ef4f4f1608b6d152e15e56ac01c84f1}\label{classylang_1_1Interpreter_a0ef4f4f1608b6d152e15e56ac01c84f1}} 
+virtual void {\bfseries Visit\+Logical\+Expr} (\mbox{\hyperlink{classylang_1_1ASTLogicalExpr}{ASTLogical\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_a1eb17fb4265fb3f114d962d013bb0807}\label{classylang_1_1Interpreter_a1eb17fb4265fb3f114d962d013bb0807}} 
+virtual void {\bfseries Visit\+Unary\+Expr} (\mbox{\hyperlink{classylang_1_1ASTUnaryExpr}{ASTUnary\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_aa46dfaffd98d128e19913a8dfd076cbd}\label{classylang_1_1Interpreter_aa46dfaffd98d128e19913a8dfd076cbd}} 
+virtual void {\bfseries Visit\+Binary\+Expr} (\mbox{\hyperlink{classylang_1_1ASTBinaryExpr}{ASTBinary\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_a791e5c08207d18d97824861818fd9fcd}\label{classylang_1_1Interpreter_a791e5c08207d18d97824861818fd9fcd}} 
+virtual void {\bfseries Visit\+Grouping\+Expr} (\mbox{\hyperlink{classylang_1_1ASTGroupingExpr}{ASTGrouping\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_aaca2f50c04f159fb0e3987c4c9b12143}\label{classylang_1_1Interpreter_aaca2f50c04f159fb0e3987c4c9b12143}} 
+virtual void {\bfseries Visit\+Var\+Expr} (\mbox{\hyperlink{classylang_1_1ASTVarExpr}{ASTVar\+Expr}} \&expr) override
+\item 
+virtual void \mbox{\hyperlink{classylang_1_1Interpreter_aa6829457adb65ad8cd1cd4a0a3922c52}{Visit\+Var\+Assign\+Expr}} (\mbox{\hyperlink{classylang_1_1ASTVarAssignExpr}{ASTVar\+Assign\+Expr}} \&expr) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_ac445528b6e026bc6b1c1773b2a06f589}\label{classylang_1_1Interpreter_ac445528b6e026bc6b1c1773b2a06f589}} 
+virtual void {\bfseries Visit\+Print\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTPrintStmnt}{ASTPrint\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_ac62501314d2953a6fee979282286a5f5}\label{classylang_1_1Interpreter_ac62501314d2953a6fee979282286a5f5}} 
+virtual void {\bfseries Visit\+Expr\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTExprStmnt}{ASTExpr\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_ab1185a870e461a6e3fa43578e0283751}\label{classylang_1_1Interpreter_ab1185a870e461a6e3fa43578e0283751}} 
+virtual void {\bfseries Visit\+Var\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTVarStmnt}{ASTVar\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_a29d1f599f1cec084c15eb56443c08aed}\label{classylang_1_1Interpreter_a29d1f599f1cec084c15eb56443c08aed}} 
+virtual void {\bfseries Visit\+Block\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTBlockStmnt}{ASTBlock\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_a2b3acd51ad2d9fe22f952848df6cdc95}\label{classylang_1_1Interpreter_a2b3acd51ad2d9fe22f952848df6cdc95}} 
+virtual void {\bfseries Visit\+If\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTIfStmnt}{ASTIf\+Stmnt}} \&stmnt) override
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_a8055fa6a9d0906edd1c651a345a78b74}\label{classylang_1_1Interpreter_a8055fa6a9d0906edd1c651a345a78b74}} 
+virtual void {\bfseries Visit\+While\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTWhileStmnt}{ASTWhile\+Stmnt}} \&stmnt) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_ac61a5a79c4e1153f15e8bbd172f30690}\label{classylang_1_1Interpreter_ac61a5a79c4e1153f15e8bbd172f30690}} 
+\mbox{\hyperlink{structylang_1_1Variable}{Variable}} {\bfseries Make\+Var} (Var\+Type type, const Var\+Value \&val)
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_af23d7d5fb5133f9334e1137f84919a72}\label{classylang_1_1Interpreter_af23d7d5fb5133f9334e1137f84919a72}} 
+\mbox{\hyperlink{structylang_1_1Variable}{Variable}} $\ast$ {\bfseries Get\+Var} (const std\+::string \&name)
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_ad51c07c2181e06868b23482d2a0d5b46}\label{classylang_1_1Interpreter_ad51c07c2181e06868b23482d2a0d5b46}} 
+void {\bfseries Push\+Env} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_aaaaee1c87ec5a54db4bda4583a1ddcd7}\label{classylang_1_1Interpreter_aaaaee1c87ec5a54db4bda4583a1ddcd7}} 
+void {\bfseries Pop\+Env} ()
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_aa594ebeabf4a7ae5240fbec12bf629ed}\label{classylang_1_1Interpreter_aa594ebeabf4a7ae5240fbec12bf629ed}} 
+void {\bfseries Evaluate\+Binary\+Expr} (Type op, const \mbox{\hyperlink{structylang_1_1Variable}{Variable}} \&lhs, const \mbox{\hyperlink{structylang_1_1Variable}{Variable}} \&rhs)
+\item 
+\mbox{\Hypertarget{classylang_1_1Interpreter_a7fe21a47411a68f5ce01f864a7764f72}\label{classylang_1_1Interpreter_a7fe21a47411a68f5ce01f864a7764f72}} 
+bool {\bfseries Is\+Truthy} (const \mbox{\hyperlink{structylang_1_1Variable}{Variable}} \&val)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classylang_1_1Interpreter_aa6829457adb65ad8cd1cd4a0a3922c52}\label{classylang_1_1Interpreter_aa6829457adb65ad8cd1cd4a0a3922c52}} 
+\index{ylang::Interpreter@{ylang::Interpreter}!VisitVarAssignExpr@{VisitVarAssignExpr}}
+\index{VisitVarAssignExpr@{VisitVarAssignExpr}!ylang::Interpreter@{ylang::Interpreter}}
+\doxysubsubsection{\texorpdfstring{VisitVarAssignExpr()}{VisitVarAssignExpr()}}
+{\footnotesize\ttfamily void ylang\+::\+Interpreter\+::\+Visit\+Var\+Assign\+Expr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classylang_1_1ASTVarAssignExpr}{ASTVar\+Assign\+Expr}} \&}]{expr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Fix this, right now it only searches the current scope will fail if the variable is not in the current scope \end{DoxyRefDesc}
+\begin{DoxyNote}{Note}
+Need to change variable in place in environment it already exists in 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classylang_1_1ExprVisitor}{ylang\+::\+Expr\+Visitor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/interpreter.\+hpp\item 
+YLang0.\+2/src/interpreter.\+cpp\end{DoxyCompactItemize}

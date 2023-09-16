@@ -1,0 +1,65 @@
+\hypertarget{classylang_1_1ExprVisitor}{}\doxysection{ylang\+::Expr\+Visitor Class Reference}
+\label{classylang_1_1ExprVisitor}\index{ylang::ExprVisitor@{ylang::ExprVisitor}}
+
+
+Abstract class used to visit a node in the \mbox{\hyperlink{classylang_1_1AST}{AST}}.  
+
+
+
+
+{\ttfamily \#include $<$ast.\+hpp$>$}
+
+
+
+Inheritance diagram for ylang\+::Expr\+Visitor\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_ae4a12f0325e8658b8329bcef48016b7a}\label{classylang_1_1ExprVisitor_ae4a12f0325e8658b8329bcef48016b7a}} 
+virtual void {\bfseries Visit\+Literal\+Expr} (\mbox{\hyperlink{classylang_1_1ASTLiteral}{ASTLiteral}} \&expr)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_a8e619f609ba2c7e92a221ab0db8a2d29}\label{classylang_1_1ExprVisitor_a8e619f609ba2c7e92a221ab0db8a2d29}} 
+virtual void {\bfseries Visit\+Logical\+Expr} (\mbox{\hyperlink{classylang_1_1ASTLogicalExpr}{ASTLogical\+Expr}} \&expr)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_a0eeaab382fac5e3d34fed7366882a060}\label{classylang_1_1ExprVisitor_a0eeaab382fac5e3d34fed7366882a060}} 
+virtual void {\bfseries Visit\+Unary\+Expr} (\mbox{\hyperlink{classylang_1_1ASTUnaryExpr}{ASTUnary\+Expr}} \&expr)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_a3afb675e389622beb4b3e6ab94ff46ec}\label{classylang_1_1ExprVisitor_a3afb675e389622beb4b3e6ab94ff46ec}} 
+virtual void {\bfseries Visit\+Binary\+Expr} (\mbox{\hyperlink{classylang_1_1ASTBinaryExpr}{ASTBinary\+Expr}} \&expr)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_a6e3b39c4c85e22c557efa5cd359a8097}\label{classylang_1_1ExprVisitor_a6e3b39c4c85e22c557efa5cd359a8097}} 
+virtual void {\bfseries Visit\+Grouping\+Expr} (\mbox{\hyperlink{classylang_1_1ASTGroupingExpr}{ASTGrouping\+Expr}} \&expr)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_ab35faf901db3a212958841cb19bbf1b6}\label{classylang_1_1ExprVisitor_ab35faf901db3a212958841cb19bbf1b6}} 
+virtual void {\bfseries Visit\+Var\+Expr} (\mbox{\hyperlink{classylang_1_1ASTVarExpr}{ASTVar\+Expr}} \&expr)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_a78bbe20d5610a90836f00d341e0bf354}\label{classylang_1_1ExprVisitor_a78bbe20d5610a90836f00d341e0bf354}} 
+virtual void {\bfseries Visit\+Var\+Assign\+Expr} (\mbox{\hyperlink{classylang_1_1ASTVarAssignExpr}{ASTVar\+Assign\+Expr}} \&expr)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_a5a2e14c4bd98ea0b82893d48bc078818}\label{classylang_1_1ExprVisitor_a5a2e14c4bd98ea0b82893d48bc078818}} 
+virtual void {\bfseries Visit\+Print\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTPrintStmnt}{ASTPrint\+Stmnt}} \&stmnt)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_af82718bf97b8abe82b16a0be1a0eb5aa}\label{classylang_1_1ExprVisitor_af82718bf97b8abe82b16a0be1a0eb5aa}} 
+virtual void {\bfseries Visit\+Expr\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTExprStmnt}{ASTExpr\+Stmnt}} \&stmnt)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_a6543d0b39bede87b8acaa42b0480e721}\label{classylang_1_1ExprVisitor_a6543d0b39bede87b8acaa42b0480e721}} 
+virtual void {\bfseries Visit\+Var\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTVarStmnt}{ASTVar\+Stmnt}} \&stmnt)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_a4e7b70ba9419d557b0a84386fe749ab8}\label{classylang_1_1ExprVisitor_a4e7b70ba9419d557b0a84386fe749ab8}} 
+virtual void {\bfseries Visit\+Block\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTBlockStmnt}{ASTBlock\+Stmnt}} \&stmnt)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_af88de69e65b14d42cfb9e5d2b9e9418f}\label{classylang_1_1ExprVisitor_af88de69e65b14d42cfb9e5d2b9e9418f}} 
+virtual void {\bfseries Visit\+If\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTIfStmnt}{ASTIf\+Stmnt}} \&stmnt)=0
+\item 
+\mbox{\Hypertarget{classylang_1_1ExprVisitor_af60e920b789b953997f0fb5600c21194}\label{classylang_1_1ExprVisitor_af60e920b789b953997f0fb5600c21194}} 
+virtual void {\bfseries Visit\+While\+Stmnt} (\mbox{\hyperlink{classylang_1_1ASTWhileStmnt}{ASTWhile\+Stmnt}} \&stmnt)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class used to visit a node in the \mbox{\hyperlink{classylang_1_1AST}{AST}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+YLang0.\+2/include/ast.\+hpp\end{DoxyCompactItemize}
