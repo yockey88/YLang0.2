@@ -1,0 +1,15 @@
+/// This is another example of "leaky" closures, PrintA should always print "outer" to 
+///     avoid rampant undefined behavior, but currently it simply walks environments outward until
+///     the variable is found, meaning the last call to print a find "inner" instead of "outer"
+
+string a = "outer";
+
+{
+    fn PrintA() {
+        print a;
+    }
+
+    PrintA();
+    string a = "inner";
+    PrintA();
+}

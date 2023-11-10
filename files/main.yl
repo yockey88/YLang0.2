@@ -1,0 +1,21 @@
+// This is my goal for the parser
+// I want to be able to write a parser that can parse this file
+// and then generate an an executable that will print "Hello World!"
+
+// Not completed yet, but this is the goal
+// Attempting to run the parser on this file will result in a crash
+
+import ystd $> yl;
+
+namespace :: ylang {
+
+    fn hello :: yl::string {
+        return "Hello World!";
+    }
+
+}
+
+fn main :: i32 {
+    ylang::hello();
+    return 0;
+}

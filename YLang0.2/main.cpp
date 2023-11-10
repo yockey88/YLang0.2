@@ -64,16 +64,16 @@ namespace ylang {
 } 
 
 int main(int argc , char* argv[]) {
-    
-    std::string src;
     try {
+        std::string src;
         ylang::Util::ReadCmndLineArgs(&argc , argv);
         src = ylang::Util::ReadSrc();
+        return ylang::Main(src);
     } catch (std::runtime_error& e) {
         std::cerr << "\n" << e.what() << std::endl;
         ylang::Util::PrintUsage();
         return 1;
     }
 
-    return ylang::Main(src);
+    throw std::runtime_error("Unreachable code");
 }

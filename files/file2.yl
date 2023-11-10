@@ -1,0 +1,99 @@
+string hello = "Hello World!";
+print hello;
+ 
+f32 pi = (22.0/7.0);
+print pi;
+
+i32 foo = 42;
+i32 bar = (foo * 2) / 12; // 7 
+i32 baz = foo + bar;
+print foo;
+print bar;
+print baz;
+
+{
+    hello = "Inner Hello World!";
+    print hello;
+
+    i32 foo = 1;
+    print foo;
+
+    {
+        i32 foo = 2;
+        print foo;
+    }
+}
+
+print hello;
+
+pi = 3.1;
+print pi;
+
+f32 f = pi / 2;
+print f;
+print f / 2;
+
+bool b = true;
+
+if b {
+    print "this is true";
+    print "this is also true";
+} else {
+    print "this is false";
+}
+
+bool b2 = false;
+
+if (b && (b2 || b)) {
+    print "this is true";
+} else {
+    print "this is false";
+}
+
+if 10 < 100 {
+    print "10 is less than 100";
+} else {
+    print "10 is not less than 100";
+}
+
+i32 i = 0;
+while i < 10 {
+    print i;
+    i = i + 1;
+}
+
+for (i = 10; i < 20; i = i + 1) {
+    print i;
+}
+
+fn func(string s , f32 f , bool b) {
+    print s;
+    print f;
+    
+    if b {
+        print "b is true";
+    } else {
+        print "b is false";
+    }
+}
+
+fn PrintPi() {
+    f32 pi = (22.0/7.0);
+    func("Pi is: " , pi , true);
+}
+
+func(hello , pi , b2);
+func("Hello World!" , 3.14 , true);
+
+fn GetPi() {
+    return (22.0/7.0);
+}
+
+pi = 0.0;
+ 
+print pi;
+ 
+pi = GetPi();
+ 
+print "retrieved pi";
+print pi;

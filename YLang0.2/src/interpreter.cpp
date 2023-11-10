@@ -400,7 +400,6 @@ namespace ylang {
             throw interpreter_error("Undefined function " + std::get<std::string>(callee.value));
         
         Variable ret = func->Call(*this , args , false);
-        std::cout << "returned " << std::get<int32_t>(ret.value) << "\n";
         VM::vstack.push(ret);
     }
 

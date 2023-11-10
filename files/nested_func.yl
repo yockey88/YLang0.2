@@ -1,0 +1,18 @@
+/// this doesnt work yet because of how I am currently handling environments
+///     I need to implement closures in a way that captures global program state at the time of
+///     function creation to allow for this to work so that count always starts at 0
+/// Currently I am throwing a runtime error and not allowing for the return of functions
+
+fn make_counter() {
+    i32 i  = 0;
+    fn count() {
+        i = i + 1;
+        print i;
+    }
+    return count;
+}
+
+i32 count = make_counter();
+count();
+count();
+count();

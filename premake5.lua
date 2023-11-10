@@ -12,9 +12,9 @@ workspace "YLang0.2"
 
     -- External Dependencies
     externals = {}
-    externals["googletest"] = "external/googletest"
+    externals["spdlog"] = "external/spdlog-1.11.0"
     
-    include "external/googletest"
+    include "external/spdlog-1.11.0"
 
     ------------------------
     -- Parser Development --
@@ -76,55 +76,37 @@ workspace "YLang0.2"
                 "YLC_RELEASE"
             }
 
-    -- -------------
-    -- -- Fuzzing --
-    -- -------------
-    -- project "Fuzzer"
-    --     location "Fuzzer"
-    --     kind "ConsoleApp"
-    --     language "C++"
-    --     cppdialect "C++20"
-    --     staticruntime "on"
+    project "ByteCode"
+        location "ByteCode"
+        kind "ConsoleApp"
+        language "C++"
+        cppdialect "C++20"
+        staticruntime "on"
 
-    --     targetdir(tdir)
-    --     objdir(odir)
+        targetdir(tdir)
+        objdir(odir)
 
-    --     files {
-    --         "%{prj.name}/main.cpp",
-    --         "YLang0.2/src/*.cpp" ,
-    --         "YLang0.2/include/**.hpp" 
-    --     }
+        files {
+            "%{prj.name}/**.cpp",
+            "%{prj.name}/**.hpp" ,
+            "%{prj.name}/include/**.hpp"
+        }
 
-    --     includedirs {
-    --         "YLang0.2/include"
-    --     }
+        includedirs {
+            "YLang0.2/include" ,
+            "ByteCode/include" ,
+            "%{externals.spdlog}/include"
+        }
 
-    --     externalincludedirs { 
-    --         "%{externals.googletest}/googletest/include" ,
-    --         "%{externals.googletest}/googlemock/include" 
-    --     }
+        links {
+            "spdlog"
+        }
 
-    --     links {
-    --         "gtest" 
-    --     }
+        filter "configurations:Debug"
+            runtime "Debug"
+            symbols "on"
 
-    --     filter { "system:windows" , "configurations:*" }
-    --         systemversion "latest"
-
-    --     filter { "system:macosx" , "configurations:*" }
-    --         systemversion "latest"
-    --         xcodebuildsettings {
-    --             ["MACOSX_DEPLOYMENT_TARGET"] = "10.15",
-    --             ["UseModernBuildSystem"] = "NO"
-    --         }
-        
-    --     filter { "system:linux" , "configurations:*" }
-
-    --     filter "configurations:Debug"
-    --         runtime "Debug"
-    --         symbols "on"
-
-    --     filter "configurations:Release"
-    --         runtime "Release"
-    --         symbols "off"
-    --         optimize "on"
+        filter "configurations:Release"
+            runtime "Release"
+            symbols "off"
+            optimize "on"

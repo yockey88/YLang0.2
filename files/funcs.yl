@@ -1,0 +1,32 @@
+fn RSum(i32 n) {
+    if n == 0 {
+        return 0;
+    }
+    print n - 1;
+    i32 s = RSum(n - 1);
+    print n;
+    print s;
+    return n + s;
+}
+
+fn Sum(i32 n) {
+    i32 sum = 0;
+    i32 i = n;
+    while i > 0 {
+        sum = sum + i;
+        i = i - 1;
+    }
+    return sum;
+}
+
+// print Sum(0);
+// print Sum(1);
+// print Sum(2);
+// print Sum(3);
+// print Sum(4);
+// print Sum(5);
+// print Sum(6);
+// print Sum(7);
+// print Sum(8);
+print RSum(9);
+print RSum(10);
